@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks/page-header.scss","style.css"],"names":[],"mappings":"AAAA;EACE,uBAAA;EACA,YAAA;ACCF","file":"style.css","sourcesContent":[".page-header {\n  background-color: black;\n  color: white;\n}\n",".page-header {\n  background-color: black;\n  color: white;\n}"]}
