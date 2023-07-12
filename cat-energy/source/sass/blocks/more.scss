@@ -1,0 +1,17 @@
+.more {
+  &__title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &__button {
+    color: #444444;
+    background-color: #f2f2f2;
+  }
+}

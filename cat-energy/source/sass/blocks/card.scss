@@ -1,0 +1,13 @@
+.card {
+  &__link {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+}

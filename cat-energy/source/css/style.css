@@ -459,8 +459,9 @@ template {
   display: flex;
   flex-wrap: wrap;
 }
-.illustration__title {
-  font-size: 12px;
+.illustration__heading {
+  font-size: 36px;
+  font-weight: 400;
   line-height: 100%;
 }
 .illustration__description {
@@ -481,5 +482,62 @@ template {
   font-style: normal;
   line-height: 20px;
   color: #444444;
+}
+.invitation--inner {
+  background-color: #f2f2f2;
+}
+
+.page-footer__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style-type: none;
+}
+.page-footer__copyright {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  color: #444444;
+  text-decoration: none;
+}
+
+.card__link {
+  text-decoration: none;
+  color: #000000;
+}
+.card__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.more__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+}
+.more__text {
+  font-size: 12px;
+  line-height: 16px;
+}
+.more__button {
+  color: #444444;
+  background-color: #f2f2f2;
+}
+
+.additions-list__heading {
+  font-size: 24px;
+  line-height: 24px;
+}
+.additions-list__title {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.description-list {
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
