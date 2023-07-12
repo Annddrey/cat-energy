@@ -1,0 +1,16 @@
+.invitation {
+  &__title {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  &__text {
+    font-family: sans-serif;
+    font-style: normal;
+    line-height: 20px;
+    color: #444444;
+  }
+}

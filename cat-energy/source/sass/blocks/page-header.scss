@@ -1,10 +1,18 @@
 .page-header {
-  background-color: #000000;
+  &__nav {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
 }
 
-.page-header__wrapper {
-  width: 200px;
-  height: 200px;
-  background-color: #ffffff;
-  margin: 0 auto;
+
+.page-header__list {
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.page-header__link {
+  text-decoration: none;
+  color: #000000;
 }

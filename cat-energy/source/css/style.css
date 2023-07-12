@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../../fonts/oswaldmedium.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../..//fonts/arial-black.woff2") format("woff2");
+  font-display: swap;
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -338,14 +359,127 @@ template {
   display: none;
 }
 
-.page-header {
-  background-color: #000000;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-.page-header__wrapper {
-  width: 200px;
-  height: 200px;
+.page {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
   background-color: #ffffff;
-  margin: 0 auto;
+}
+
+.page-header__nav {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.page-header__list {
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.page-header__link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.promo {
+  padding: 27px 35px;
+  color: #ffffff;
+  text-align: center;
+  background-image: url("../../img/index-color.png"), url("../../img/index-background.jpg");
+}
+.promo__title {
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+}
+
+.button {
+  background-color: #68b738;
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.programs__list {
+  margin: 0;
+}
+
+.programs__container {
+  background-color: #f2f2f2;
+  padding: 24px 20px 18px;
+}
+
+.programs__title {
+  font-size: 24px;
+  line-height: 37px;
+}
+
+.programs__description {
+  margin: 0;
+}
+
+.programs__button-catalog {
+  display: block;
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.description__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.illustration {
+  background-color: #EAEAEA;
+}
+.illustration__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.illustration__title {
+  font-size: 12px;
+  line-height: 100%;
+}
+.illustration__description {
+  text-align: center;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.invitation__title {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.invitation__text {
+  font-family: sans-serif;
+  font-style: normal;
+  line-height: 20px;
+  color: #444444;
 }
 /*# sourceMappingURL=style.css.map */
