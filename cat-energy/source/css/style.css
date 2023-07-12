@@ -540,4 +540,19 @@ template {
 .description-list {
   display: flex;
 }
+
+.present {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 290px;
+  background-image: url("../../img/index-color.png"), url("../../img/present.png");
+  background-color: #68B738;
+}
+.present__text {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
 /*# sourceMappingURL=style.css.map */
