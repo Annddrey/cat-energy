@@ -381,6 +381,15 @@ template {
   background-color: #ffffff;
 }
 
+.page-main__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+.page-main__description {
+  text-transform: uppercase;
+}
+
 .page-header__nav {
   font-size: 18px;
   text-transform: uppercase;
@@ -406,7 +415,7 @@ template {
 .promo__title {
   font-size: 36px;
   line-height: 36px;
-  margin: 0;
+  font-weight: 400;
 }
 
 .button {
@@ -554,5 +563,71 @@ template {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+}
+
+.field-group {
+  border: none;
+  margin: 0;
+}
+.field-group__title {
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.field-group__textarea {
+  border: 1px solid #e7e7e7;
+  resize: none;
+}
+.field-group__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.field-group__item {
+  margin-bottom: 14px;
+}
+.field-group:last-child {
+  margin-bottom: 24px;
+}
+
+.field {
+  display: flex;
+  color: #444444;
+}
+.field__title {
+  align-self: center;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.field__input {
+  flex-grow: 1;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 14px;
+  margin-left: 12px;
+  border: 1px solid #e7e7e7;
+  box-sizing: border-box;
+  color: #444444;
+}
+
+.control {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.control__title {
+  font-size: 16px;
+  padding-left: 46px;
+  text-transform: uppercase;
+}
+.control__control-marck {
+  position: absolute;
+  display: block;
+  min-width: 30px;
+  min-height: 30px;
+  border: 1px solid #cdcdcd;
+}
+.control__control-marck--radio {
+  border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */

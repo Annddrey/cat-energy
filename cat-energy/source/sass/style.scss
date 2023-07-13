@@ -5,10 +5,13 @@
 @import "global/global.scss";
 @import "global/mixins.scss";
 @import "global/variables.scss";
+@import "global/visually-hidden.scss";
 
 // Blocks
 
 @import "blocks/page.scss";
+
+@import "blocks/page-main.scss";
 
 @import "blocks/page-header.scss";
 
@@ -37,4 +40,12 @@
 @import "blocks/description-list.scss";
 
 @import "blocks/present.scss";
+
+// Form
+
+@import "blocks/field-group.scss";
+
+@import "blocks/field.scss";
+
+@import "blocks/control.scss";
 

@@ -1,0 +1,29 @@
+.field-group {
+  border: none;
+  margin: 0;
+
+  &__title {
+    font-size: 24px;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+
+  &__textarea {
+    border: 1px solid #e7e7e7;
+    resize: none;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__item {
+    margin-bottom: 14px;
+  }
+
+  &:last-child {
+    margin-bottom: 24px;
+  }
+}

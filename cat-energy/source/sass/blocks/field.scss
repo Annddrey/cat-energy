@@ -1,0 +1,22 @@
+.field {
+  display: flex;
+  color: #444444;
+
+  &__title {
+    align-self: center;
+    font-size: 16px;
+    text-transform: uppercase;
+
+  }
+
+  &__input {
+    flex-grow: 1;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 14px;
+    margin-left: 12px;
+    border: 1px solid #e7e7e7;
+    box-sizing: border-box;
+    color: #444444;
+  }
+}
