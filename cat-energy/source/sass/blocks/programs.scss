@@ -1,19 +1,36 @@
 .programs__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 20px;
   margin: 0;
 }
 
 .programs__container {
+  display: grid;
+  grid-template-columns: 50px 168px;
+  grid-gap: 20px 22px;
+  padding: 20px;
   background-color: #f2f2f2;
-  padding: 24px 20px 18px;
+}
+
+.programs__sign {
+  grid-column: 1 / 2;
 }
 
 .programs__title {
+  grid-column: 2 / 3;
   font-size: 24px;
   line-height: 37px;
 }
 
 .programs__description {
-  margin: 0;
+  grid-column: 1 / 3;
+  margin: 0 0 15px 0;
+
+  & P {
+    padding-bottom: 22px;
+    border-bottom: 1px solid #d9d9d9;
+  }
 }
 
 .programs__button-catalog {
@@ -23,4 +40,12 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+}
+
+.programs__sign {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #68b738;
+  border-radius: 50%;
 }

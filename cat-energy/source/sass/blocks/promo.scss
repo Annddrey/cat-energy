@@ -1,15 +1,21 @@
 .promo {
-  padding: 27px 35px;
+  padding: 0 20px 20px;
   color: #ffffff;
   text-align: center;
   background-image: url("../../img/index-color.png"),
     url("../../img/index-background.jpg");
+  background-repeat: no-repeat;
+  background-position: end 0;
 
   &__title {
+    margin: 25px 0;
     font-size: 36px;
     line-height: 36px;
     font-weight: 400;
   }
+
+  &__slogan {
+    margin: 0;
+    margin-bottom: 29px;
+  }
 }
-
-

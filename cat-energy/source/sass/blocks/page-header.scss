@@ -1,18 +1,123 @@
 .page-header {
-  &__nav {
-    font-size: 18px;
-    text-transform: uppercase;
+  display: flex;
+  min-height: 66px;
+  border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    min-height: 76px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 107px;
   }
 }
 
+.page-header__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: auto;
+    padding: 0 110px;
+  }
+}
+
+.page-header__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 190px;
+  padding: 12px 0 16px;
+
+  @media (min-width: $tablet-width) {
+    img {
+      display: none;
+    }
+
+    width: 174px;
+    background: url("../../img/logo-tablet.svg") no-repeat center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    background: url("../../img/logo-desktop.svg") no-repeat center;
+  }
+}
+
+.page-header__nav {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    button {
+      display: none;
+    }
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+}
+
+.page-header__nav-toggle {
+  margin-left: auto;
+  border: none;
+  width: 30px;
+  height: 30px;
+  background: url("../../img/toggler.svg") no-repeat center;
+}
 
 .page-header__list {
+  position: absolute;
+  top: 67px;
+  left: 0;
+  right: 0;
   padding: 0;
+  margin: 0;
   list-style-type: none;
-  text-align: center;
+  background-color: #ffffff;
+  // &--closed {
+  //   display: none;
+  // }
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.page-header__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 66px;
+  border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .page-header__link {
+  padding: 0;
+  padding-right: 0;
   text-decoration: none;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px;
+  }
 }
