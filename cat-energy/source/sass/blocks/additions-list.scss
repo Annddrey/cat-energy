@@ -10,4 +10,9 @@
     font-weight: normal;
     text-transform: uppercase;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

@@ -62,108 +62,112 @@
           action="https://echo.htmlacademy.ru/"
           method="post"
         >
-          <fieldset class="form__group field-group">
-            <legend class="visually-hidden">Данные кота</legend>
+          <div class="form__group-container">
+            <fieldset class="form__group field-group">
+              <legend class="visually-hidden">Данные кота</legend>
 
-            <ul class="field-group__list">
-              <li class="field-group__item">
-                <label class="field">
-                  <span class="field__title">ИМЯ:*</span>
-                  <input
-                    class="field__input"
-                    type="text"
-                    name="name"
-                    placeholder="БАРСИК"
-                    required
-                  />
-                </label>
-              </li>
+              <ul class="field-group__list">
+                <li class="field-group__item">
+                  <label class="field">
+                    <span class="field__title">ИМЯ:*</span>
+                    <input
+                      class="field__input"
+                      type="text"
+                      name="name"
+                      placeholder="БАРСИК"
+                      required
+                    />
+                  </label>
+                </li>
 
-              <li class="field-group__item">
-                <label class="field">
-                  <span class="field__title">Вес (кг):*</span>
-                  <input
-                    class="field__input"
-                    type="number"
-                    name="weight"
-                    placeholder="7"
-                    required
-                  />
-                </label>
-              </li>
+                <li class="field-group__item">
+                  <label class="field">
+                    <span class="field__title">Вес (кг):*</span>
+                    <input
+                      class="field__input"
+                      type="number"
+                      name="weight"
+                      placeholder="7"
+                      required
+                    />
+                  </label>
+                </li>
 
-              <li class="field-group__item">
-                <label class="field">
-                  <span class="field__title">Возраст (лет):</span>
-                  <input
-                    class="field__input"
-                    type="number"
-                    name="age"
-                    placeholder="7"
-                  />
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+                <li class="field-group__item">
+                  <label class="field">
+                    <span class="field__title">Возраст (лет):</span>
+                    <input
+                      class="field__input"
+                      type="number"
+                      name="age"
+                      placeholder="7"
+                    />
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
 
-          <fieldset class="form__group field-group">
-            <legend class="visually-hidden">Цель программы</legend>
+            <fieldset class="form__group field-group">
+              <legend class="visually-hidden">Цель программы</legend>
 
-            <ul class="field-group__list">
-              <li class="field-group__item">
-                <label class="control control--radio">
-                  <input
-                    class="control__input visually-hidden"
-                    name="type-program"
-                    value="skinny"
-                    type="radio"
-                    checked
-                  />
-                  <span
-                    class="control__control-marck control__control-marck--radio"
-                  ></span>
-                  <span class="control__title">похудение</span>
-                </label>
-              </li>
+              <ul class="field-group__list">
+                <li class="field-group__item">
+                  <label class="control control--radio">
+                    <input
+                      class="control__input visually-hidden"
+                      name="type-program"
+                      value="skinny"
+                      type="radio"
+                      checked
+                    />
+                    <span
+                      class="control__control-marck control__control-marck--radio"
+                    ></span>
+                    <span class="control__title">похудение</span>
+                  </label>
+                </li>
 
-              <li class="field-group__item">
-                <label class="control control--radio">
-                  <input
-                    class="control__input visually-hidden"
-                    name="type-program"
-                    value="fat"
-                    type="radio"
-                  />
-                  <span
-                    class="control__control-marck control__control-marck--radio"
-                  ></span>
-                  <span class="control__title">Набор массы</span>
-                </label>
-              </li>
+                <li class="field-group__item">
+                  <label class="control control--radio">
+                    <input
+                      class="control__input visually-hidden"
+                      name="type-program"
+                      value="fat"
+                      type="radio"
+                    />
+                    <span
+                      class="control__control-marck control__control-marck--radio"
+                    ></span>
+                    <span class="control__title">Набор массы</span>
+                  </label>
+                </li>
 
-              <li class="field-group__item">
-                <label class="control control--radio">
-                  <input
-                    class="control__input visually-hidden"
-                    name="type-program"
-                    value="not-selected"
-                    type="radio"
-                  />
-                  <span
-                    class="control__control-marck control__control-marck--radio"
-                  ></span>
-                  <span class="control__title">Не знаю (Нужен ваш совет)</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+                <li class="field-group__item">
+                  <label class="control control--radio">
+                    <input
+                      class="control__input visually-hidden"
+                      name="type-program"
+                      value="not-selected"
+                      type="radio"
+                    />
+                    <span
+                      class="control__control-marck control__control-marck--radio"
+                    ></span>
+                    <span class="control__title"
+                      >Не знаю (Нужен ваш совет)</span
+                    >
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
 
           <fieldset class="form__group field-group">
             <legend class="field-group__title">
               Контактные данные (владельца кота)
             </legend>
 
-            <ul class="field-group__list">
+            <ul class="field-group__list field-group__list--desktop">
               <li class="field-group__item">
                 <label class="field">
                   <span class="field__title">E-mail:*</span>
@@ -209,7 +213,7 @@
           <fieldset class="form__group field-group">
             <legend class="field-group__title">Дополнительно</legend>
 
-            <ul class="field-group__list">
+            <ul class="field-group__list-additional">
               <li class="field-group__item">
                 <label class="control control--checkbox">
                   <input
@@ -269,18 +273,19 @@
             </ul>
           </fieldset>
 
-          <button class="form__button button" type="submit">
-            отправить заявку
-          </button>
-
-          <p class="form__footnote">* — Обязательные поля</p>
+          <div class="form__container">
+            <button class="form__button button" type="submit">
+              отправить заявку
+            </button>
+            <p class="form__footnote">* — Обязательные поля</p>
+          </div>
         </form>
       </section>
 
-      <article class="page-main__section invitation--inner">
+      <article class="page-main__section invitation">
         <h2 class="visually-hidden">Контакты</h2>
 
-        <address class="invitation__address invitation__address--inner">
+        <address class="invitation__address">
           <p class="invitation__title">приглашаем к сотрудничеству дилеров!</p>
           <p class="invitation__text">
             ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
@@ -379,8 +384,8 @@
           </li>
         </ul>
 
-        <div class="page-footer__container">
-          <a class="page-footer__copyright" href="#">HTML Academy</a>
+        <a class="page-footer__copyright" href="#"
+          >HTML Academy
           <svg
             width="27"
             height="34"
@@ -394,7 +399,7 @@
               fill="#666"
             />
           </svg>
-        </div>
+        </a>
       </div>
     </footer>
   </body>

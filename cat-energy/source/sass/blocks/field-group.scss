@@ -1,6 +1,7 @@
 .field-group {
   border: none;
   margin: 0;
+  padding: 0;
 
   &__title {
     font-size: 24px;
@@ -17,6 +18,14 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+
+    &--desktop {
+      @media (min-width: $desktop-width) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 80px;
+      }
+    }
   }
 
   &__item {
@@ -25,5 +34,22 @@
 
   &:last-child {
     margin-bottom: 24px;
+  }
+}
+
+.field-group__list-additional {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 80px;
   }
 }
