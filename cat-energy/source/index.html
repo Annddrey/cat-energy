@@ -6,7 +6,7 @@
     <title>Cat Energy</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="page__body">
+  <body class="page__body page__body--index">
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="">
@@ -26,12 +26,14 @@
           />
         </a>
 
-        <nav class="page-header__nav">
+        <nav
+          class="page-header__nav page-header__nav--opened page-header__nav--nojs"
+        >
           <button class="page-header__nav-toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
 
-          <ul class="page-header__list page-header__list--closed">
+          <ul class="page-header__list">
             <li class="page-header__item page-header__item--current">
               <a class="page-header__link" href="">главная</a>
             </li>
@@ -292,5 +294,21 @@
         </a>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector(".page-header__nav");
+      var navToggle = document.querySelector(".page-header__nav-toggle");
+
+      navMain.classList.remove("page-header__nav--nojs");
+
+      navToggle.addEventListener("click", function () {
+        if (navMain.classList.contains("page-header__nav--closed")) {
+          navMain.classList.remove("page-header__nav--closed");
+          navMain.classList.add("page-header__nav--opened");
+        } else {
+          navMain.classList.add("page-header__nav--closed");
+          navMain.classList.remove("page-header__nav--opened");
+        }
+      });
+    </script>
   </body>
 </html>
