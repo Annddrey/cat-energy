@@ -151,6 +151,7 @@
   margin: 0;
   list-style-type: none;
   background-color: #ffffff;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     position: static;
@@ -169,6 +170,29 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+
+    &--current .page-header__link--index,
+    &--current .page-header__link {
+      &::after {
+        content: "";
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: 12px;
+        height: 2px;
+      }
+    }
+    &--current .page-header__link {
+      &::after {
+        background-color: #68b738;
+      }
+    }
+
+    &--current .page-header__link--index {
+      &::after {
+        background-color: #ffffff;
+      }
+    }
   }
 }
 
@@ -182,9 +206,16 @@
   font-weight: 500;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     padding: 20px;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--index {
+      color: #ffffff;
+    }
   }
 }

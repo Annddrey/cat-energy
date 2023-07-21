@@ -27,7 +27,7 @@
         </a>
 
         <nav
-          class="page-header__nav page-header__nav--opened page-header__nav--nojs"
+          class="page-header__nav page-header__nav--closed page-header__nav--nojs"
         >
           <button class="page-header__nav-toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -35,15 +35,24 @@
 
           <ul class="page-header__list">
             <li class="page-header__item page-header__item--current">
-              <a class="page-header__link" href="">главная</a>
+              <a class="page-header__link page-header__link--index" href=""
+                >главная</a
+              >
             </li>
             <li class="page-header__item">
-              <a class="page-header__link" href="catalog.html">
+              <a
+                class="page-header__link page-header__link--index"
+                href="catalog.html"
+              >
                 каталог продукции
               </a>
             </li>
             <li class="page-header__item">
-              <a class="page-header__link" href="form.html">подбор программы</a>
+              <a
+                class="page-header__link page-header__link--index"
+                href="form.html"
+                >подбор программы</a
+              >
             </li>
           </ul>
         </nav>
@@ -52,16 +61,21 @@
 
     <main class="page__main page-main">
       <header class="page-main promo">
-        <h1 class="promo__title">Функциональное питание для котов</h1>
-        <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <img
-          class="promo__image"
-          width="280"
-          height="270"
-          src="img/food.png"
-          alt="пачкп куриного корма Cat Energy pro"
-        />
-        <a class="promo__button button" href="#">подобрать программу</a>
+        <div class="promo__container">
+          <h1 class="promo__title">
+            Функциональное<br />
+            питание для котов
+          </h1>
+          <p class="promo__slogan">Занялся собой? Займись котом!</p>
+          <img
+            class="promo__image"
+            width="280"
+            height="270"
+            src="img/food.png"
+            alt="пачкп куриного корма Cat Energy pro"
+          />
+          <a class="promo__button button" href="#">подобрать программу</a>
+        </div>
       </header>
 
       <section class="page-main__section programs">
