@@ -189,8 +189,10 @@
     }
 
     &--current .page-header__link--index {
-      &::after {
-        background-color: #ffffff;
+      @media (min-width: $desktop-width) {
+        &::after {
+          background-color: #ffffff;
+        }
       }
     }
   }
