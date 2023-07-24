@@ -154,45 +154,91 @@
         <p class="illustration__text">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
           Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
-          этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          этом он не менял своих привычек и <br />
+          по-прежнему спит по 16 часов в день.
         </p>
 
         <div class="illustration__container-list">
           <dl class="illustration__list">
-            <dt class="illustration__title">снижение веса</dt>
-            <dd class="illustration__description">5 КГ</dd>
+            <div class="illustration__item">
+              <dt class="illustration__title">снижение веса</dt>
+              <dd class="illustration__description">5 КГ</dd>
+            </div>
 
-            <dt class="illustration__title">затрачено времени</dt>
-            <dd class="illustration__description">60 ДНЕЙ</dd>
+            <div class="illustration__item">
+              <dt class="illustration__title">затрачено времени</dt>
+              <dd class="illustration__description">60 ДНЕЙ</dd>
+            </div>
           </dl>
 
-          <p class="ilustration__resault">Затраты на питание: 15 000 РУБ.</p>
+          <p class="ilustration__resault">
+            <span>Затраты на питание:</span><br />
+            <span>15 000 РУБ.</span>
+          </p>
         </div>
 
-        <div class="illustration__container-image">
-          <img
-            class="illustration__image"
-            width="280"
-            height="232"
-            src="img/fat-cat.png"
-            alt="Кот до питания Cat Energy"
-          />
-          <img
-            class="illustration__image"
-            width="280"
-            height="232"
-            src="img/slim-cat.png"
-            alt="Кот после питания Cat Energy"
-          />
+        <div class="illustration__container">
+          <div class="illustration__pictures">
+            <div class="img-container" style="width: 270px">
+              <img
+                class="illustration__image"
+                width="280"
+                height="232"
+                src="img/cat-fat.png"
+                alt="Кот до питания Cat Energy"
+              />
+            </div>
 
-          <div class="illustration__range-slider">
-            <span class="illustration__rang-title">было</span>
-            <!-- <div class="illustration__range-bar">
-            <button class="illustration__toggle">
-              <span class="visually-hidden">Ручка регулирования</span>
+            <div
+              class="img-container img-container--cat-hidden"
+              style="width: 296px"
+            >
+              <img
+                class="illustration__image"
+                width="280"
+                height="232"
+                src="img/cat-slim.png"
+                alt="Кот после питания Cat Energy"
+              />
+            </div>
+          </div>
+
+          <div class="illustration__range-container">
+            <button
+              class="illustration__button illustration__button--before"
+              type="button"
+            >
+              <span class="illustration__button-text">было</span>
             </button>
-          </div> -->
-            <span class="illustration__rang-title">стало</span>
+
+            <div class="illustration__range">
+              <div class="illustration__range-slider" style="left: 0%"></div>
+            </div>
+
+            <button
+              class="illustration__button illustration__button--after"
+              type="button"
+            >
+              <span class="illustration__button-text">стало</span>
+            </button>
+          </div>
+
+          <div
+            class="illustration__range-container illustration__range-container--tablet"
+          >
+            <label class="illustration__label-slider">
+              <span class="illustration__button-text">было</span>
+              <input
+                class="ilustration__slider-tablet"
+                type="range"
+                name="image-slider"
+                id="image-slider"
+                min="0"
+                max="100"
+                value="50"
+              />
+              <span class="illustration__button-text">стало</span>
+            </label>
           </div>
         </div>
       </section>

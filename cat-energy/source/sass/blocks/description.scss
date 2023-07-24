@@ -21,12 +21,12 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       row-gap: 37px;
-      column-gap: 137px;
+      column-gap: 55px;
     }
 
     @media (min-width: $desktop-width) {
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      column-gap: 77px;
+      column-gap: 84px;
     }
   }
 }
@@ -48,6 +48,22 @@
     padding: 0;
     min-height: 280px;
     margin: 0;
+
+    &:nth-child(1) {
+      min-width: 230px;
+    }
+
+    &:nth-child(2) {
+      min-width: 246px;
+    }
+
+    &:nth-child(3) {
+      min-width: 247px;
+    }
+
+    &:nth-child(4) {
+      min-width: 249px;
+    }
   }
 
   & p {
