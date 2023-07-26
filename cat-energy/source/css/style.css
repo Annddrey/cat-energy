@@ -1658,7 +1658,8 @@ template {
 }
 
 .page-footer__wrapper {
-  padding: 20px;
+  padding: 0 20px 0;
+  padding-bottom: 0;
   text-align: center;
   background-color: #f2f2f2;
 }
@@ -1667,6 +1668,7 @@ template {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 147px;
     padding: 0 30px;
   }
 }
@@ -1677,31 +1679,76 @@ template {
 }
 .page-footer__logo-link {
   display: block;
-  padding: 39px 96px 32px;
+  width: 100%;
+  padding: 39px 56px 32px 96px;
   box-sizing: border-box;
   border-bottom: 1px solid #d9d9d9;
 }
 @media (min-width: 768px) {
   .page-footer__logo-link {
-    padding-left: 0;
+    width: auto;
+    padding: 10px 0;
     border: none;
   }
 }
 .page-footer__list {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
+  min-height: 63px;
   padding: 0;
   margin: 0;
+  border-bottom: 1px solid #d6d6d6;
   list-style-type: none;
+}
+@media (min-width: 768px) {
+  .page-footer__list {
+    border: none;
+  }
+}
+.page-footer__item {
+  padding: 10px 0;
+}
+.page-footer__link {
+  display: block;
+}
+.page-footer__link--vk {
+  padding: 13px 15px;
+}
+.page-footer__link--instagram {
+  padding: 12px 15px;
+}
+.page-footer__link--facebook {
+  padding: 12px 15px;
+}
+.page-footer .page-footer__icon-svg--vk path {
+  width: 30px;
+  height: 22px;
+}
+.page-footer .page-footer__icon-svg--instagram path {
+  width: 23px;
+  height: 23px;
+}
+.page-footer .page-footer__icon-svg--facebook path {
+  width: 28px;
+  height: 33px;
 }
 .page-footer__copyright {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  font-family: sans-serif;
+  padding: 22px 0 22px;
+  font-family: "Arial", "Arimo", sans-serif;
   font-size: 16px;
   line-height: normal;
   color: #444444;
   text-decoration: none;
+}
+@media (min-width: 768px) {
+  .page-footer__copyright svg {
+    margin-left: 22px;
+  }
 }
 
 @media (min-width: 768px) {
