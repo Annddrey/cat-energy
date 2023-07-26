@@ -6,10 +6,14 @@
   position: relative;
 
   &__address {
-    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    padding: 26px 20px;
+    z-index: 2;
 
     @media (min-width: $tablet-width) {
-      padding: 0 70px;
+      padding: 60px 70px 56px;
     }
 
     @media (min-width: $desktop-width) {
@@ -23,22 +27,79 @@
   }
 
   &__title {
+    grid-column: 1 / 2;
+    max-width: 189px;
+    margin: 0;
     font-style: normal;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
-    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 26px;
+    }
   }
 
   &__text {
-    font-family: sans-serif;
+    grid-column: 2 / 3;
+    justify-self: end;
+    max-width: 173px;
+    margin: 0;
+    font-family: "Arial", "Arimo", sans-serif;
     font-style: normal;
     line-height: 20px;
     color: #444444;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      text-align: end;
+    }
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-height: 400px;
   }
 
   &__map {
     display: block;
+    width: 114%;
+    height: auto;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+
+    @media (min-width: $desktop-width) {
+      content: url("../../img/location-desktop.png");
+    }
+  }
+
+  &__map-pin {
+    position: absolute;
+    display: block;
+    bottom: 47%;
+    width: 57px;
+    height: 53px;
+    background-image: url("../../img/map-pin.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    @media (min-width: $tablet-width) {
+      bottom: 37%;
+      width: 113px;
+      height: 106px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 63%;
+      bottom: 40%;
+    }
   }
 
   &--inner {

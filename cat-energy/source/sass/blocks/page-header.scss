@@ -71,12 +71,20 @@
     }
     justify-content: end;
   }
+
+  @media (max-width: $mobile-width-only) {
+    &--closed .page-header__list {
+      display: none;
+    }
+  }
+
   @media (max-width: $mobile-width-only) {
     &--nojs .page-header__nav-toggle {
       display: none;
     }
 
-    &--nojs .page-header__list {
+    &--nojs ul.page-header__list {
+      display: block;
       position: static;
       width: 100%;
     }

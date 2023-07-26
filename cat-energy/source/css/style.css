@@ -491,10 +491,16 @@ template {
   }
 }
 @media (max-width: 767px) {
+  .page-header__nav--closed .page-header__list {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
   .page-header__nav--nojs .page-header__nav-toggle {
     display: none;
   }
-  .page-header__nav--nojs .page-header__list {
+  .page-header__nav--nojs ul.page-header__list {
+    display: block;
     position: static;
     width: 100%;
   }
@@ -912,7 +918,7 @@ template {
 }
 
 .programs__description {
-  font-family: "Arimo", sans-serif;
+  font-family: "Arial", "Arimo", sans-serif;
   grid-column: 1/3;
   margin: 0 0 15px 0;
   letter-spacing: normal;
@@ -1050,7 +1056,7 @@ template {
   position: relative;
   max-width: 380px;
   margin: 0;
-  font-family: "Arimo", sans-serif;
+  font-family: "Arial", "Arimo", sans-serif;
 }
 .description__item p br {
   display: none;
@@ -1194,7 +1200,7 @@ template {
 .illustration__text {
   margin: 0;
   margin-bottom: 20px;
-  font-family: "Arimo", sans-serif;
+  font-family: "Arial", "Arimo", sans-serif;
 }
 .illustration__text br {
   display: none;
@@ -1249,7 +1255,7 @@ template {
 }
 @media (min-width: 1440px) {
   .illustration__list {
-    margin-right: 0;
+    margin-right: 100px;
   }
 }
 
@@ -1275,7 +1281,7 @@ template {
   bottom: -7px;
   padding: 0 8px;
   width: min-content;
-  font-family: "Arimo", sans-serif;
+  font-family: "Arial", "Arimo", sans-serif;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
@@ -1549,11 +1555,15 @@ template {
   position: relative;
 }
 .invitation__address {
-  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  padding: 26px 20px;
+  z-index: 2;
 }
 @media (min-width: 768px) {
   .invitation__address {
-    padding: 0 70px;
+    padding: 60px 70px 56px;
   }
 }
 @media (min-width: 1440px) {
@@ -1567,20 +1577,81 @@ template {
   }
 }
 .invitation__title {
+  grid-column: 1/2;
+  max-width: 189px;
+  margin: 0;
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  margin: 0;
+}
+@media (min-width: 768px) {
+  .invitation__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 .invitation__text {
-  font-family: sans-serif;
+  grid-column: 2/3;
+  justify-self: end;
+  max-width: 173px;
+  margin: 0;
+  font-family: "Arial", "Arimo", sans-serif;
   font-style: normal;
   line-height: 20px;
   color: #444444;
 }
+@media (min-width: 768px) {
+  .invitation__text {
+    font-size: 16px;
+    text-align: end;
+  }
+}
+.invitation__container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  max-height: 400px;
+}
 .invitation__map {
   display: block;
+  width: 114%;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .invitation__map {
+    width: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  .invitation__map {
+    content: url("../../img/location-desktop.png");
+  }
+}
+.invitation__map-pin {
+  position: absolute;
+  display: block;
+  bottom: 47%;
+  width: 57px;
+  height: 53px;
+  background-image: url("../../img/map-pin.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+@media (min-width: 768px) {
+  .invitation__map-pin {
+    bottom: 37%;
+    width: 113px;
+    height: 106px;
+  }
+}
+@media (min-width: 1440px) {
+  .invitation__map-pin {
+    left: 63%;
+    bottom: 40%;
+  }
 }
 .invitation--inner {
   background-color: #f2f2f2;

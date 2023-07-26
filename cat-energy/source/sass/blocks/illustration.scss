@@ -36,7 +36,7 @@
 .illustration__text {
   margin: 0;
   margin-bottom: 20px;
-  font-family: "Arimo", sans-serif;
+  font-family: "Arial", "Arimo", sans-serif;
 
   & br {
     display: none;
@@ -86,7 +86,7 @@
   margin-bottom: 30px;
 
   @media (min-width: $desktop-width) {
-    margin-right: 0;
+    margin-right: 100px;
   }
 }
 
@@ -111,7 +111,7 @@
   bottom: -7px;
   padding: 0 8px;
   width: min-content;
-  font-family: "Arimo", sans-serif;
+  font-family: "Arial", "Arimo", sans-serif;
   font-size: 12px;
   line-height: 12px;
   text-align: center;

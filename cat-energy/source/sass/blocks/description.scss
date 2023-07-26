@@ -70,7 +70,7 @@
     position: relative;
     max-width: 380px;
     margin: 0;
-    font-family: "Arimo", sans-serif;
+    font-family: "Arial", "Arimo", sans-serif;
 
     & br {
       display: none;
@@ -146,6 +146,7 @@
   }
 
   // Number image
+
   @media (min-width: $tablet-width) {
     &::before {
       display: block;
