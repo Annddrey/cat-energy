@@ -30,6 +30,14 @@
       padding: 10px 0;
       border: none;
     }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &__list {
@@ -62,22 +70,31 @@
       padding: 12px 15px;
     }
     &--facebook {
-      padding: 12px 15px;
+      padding: 22px 22px;
+    }
+
+    &:hover {
+      fill: #68b738;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 
   .page-footer__icon-svg {
-    &--vk path {
+    &--vk {
       width: 30px;
       height: 22px;
     }
 
-    &--instagram path {
+    &--instagram {
       width: 23px;
       height: 23px;
     }
 
-    &--facebook path {
+    &--facebook {
+      fill: #ffffff;
       width: 28px;
       height: 33px;
     }
@@ -95,9 +112,18 @@
     text-decoration: none;
 
     & svg {
+      fill: #666666;
       @media (min-width: $tablet-width) {
         margin-left: 22px;
       }
+    }
+
+    &:hover svg {
+      fill: #68b738;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 }

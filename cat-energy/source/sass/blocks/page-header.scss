@@ -57,6 +57,14 @@
     width: 202px;
     background: url("../../img/logo-desktop.svg") no-repeat center;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-header__nav {
@@ -203,6 +211,14 @@
         }
       }
     }
+  }
+
+  &:not(&--current):hover {
+    opacity: 0.6;
+  }
+
+  &:not(&--current):active {
+    opacity: 0.3;
   }
 }
 

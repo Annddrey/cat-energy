@@ -18,7 +18,7 @@
   display: grid;
   grid-template-columns: 50px 1fr;
   grid-gap: 22px 18px;
-  padding: 24px 33px 22px 20px;
+  padding: 24px 33px 18px 20px;
   background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) and (max-width: ($desktop-width - 1)) {
@@ -133,7 +133,7 @@
 .programs__description {
   font-family: "Arial", "Arimo", sans-serif;
   grid-column: 1 / 3;
-  margin: 0 0 15px 0;
+  margin: 0;
   letter-spacing: normal;
 
   @media (min-width: $tablet-width) and (max-width: ($desktop-width - 1)) {
@@ -153,6 +153,7 @@
     border-bottom: 1px solid #d9d9d9;
 
     @media (min-width: $tablet-width) {
+      padding-bottom: 0;
       border: none;
     }
   }
@@ -161,6 +162,7 @@
 .programs__button-catalog {
   position: relative;
   display: block;
+  margin-top: 15px;
   color: #000000;
   font-family: "Oswald", sans-serif;
   text-decoration: none;
@@ -169,8 +171,13 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin-top: 48px;
     font-size: 20px;
     line-height: normal;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 23px;
   }
 
   &::after {
@@ -184,12 +191,11 @@
 
     @media (min-width: $tablet-width) {
       top: 10px;
-      left: 133px;
-    }
-
-    @media (min-width: $tablet-width) {
-      top: 10px;
       left: 136px;
     }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
