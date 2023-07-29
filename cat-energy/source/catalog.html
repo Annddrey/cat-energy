@@ -352,15 +352,15 @@
       </section>
 
       <section class="page-main__section additions-list">
-        <div>
-          <h2 class="additions-list__heading">Дополнительные товары</h2>
+        <h2 class="additions-list__heading">Дополнительные товары</h2>
 
+        <div class="additions-list__cards">
           <article class="additions-list__item">
             <h3 class="additions-list__title">Сахарозаменитель</h3>
 
-            <dl class="additions-list__description description-list">
-              <dt class="description-list__definition">1 упаковка (100 г)</dt>
-              <dd class="description-list__meaning">200 Р.</dd>
+            <dl class="additions-list__list">
+              <dt class="description-list__quantities">1 упаковка (100 г)</dt>
+              <dd class="description-list__cost">200 Р.</dd>
             </dl>
 
             <a class="additions-list__button button" href="">заказать</a>
@@ -369,9 +369,9 @@
           <article class="additions-list__item">
             <h3 class="additions-list__title">питьевая вода</h3>
 
-            <dl class="additions-list__description description-list">
-              <dt class="description-list__definition">5 литров</dt>
-              <dd class="description-list__meaning">50 Р.</dd>
+            <dl class="additions-list__list">
+              <dt class="description-list__quantities">5 литров</dt>
+              <dd class="description-list__cost">50 Р.</dd>
             </dl>
 
             <a class="additions-list__button button" href="">заказать</a>
@@ -380,9 +380,9 @@
           <article class="additions-list__item">
             <h3 class="additions-list__title">молоко</h3>
 
-            <dl class="additions-list__description description-list">
-              <dt class="description-list__definition">1 литр</dt>
-              <dd class="description-list__meaning">100 Р.</dd>
+            <dl class="additions-list__list">
+              <dt class="description-list__quantities">1 литр</dt>
+              <dd class="description-list__cost">100 Р.</dd>
             </dl>
 
             <a class="additions-list__button button" href="">заказать</a>
@@ -391,9 +391,9 @@
           <article class="additions-list__item">
             <h3 class="additions-list__title">витамины</h3>
 
-            <dl class="additions-list__description description-list">
-              <dt class="description-list__definition">1 упаковка (30 г)</dt>
-              <dd class="description-list__meaning">300 Р.</dd>
+            <dl class="additions-list__list">
+              <dt class="description-list__quantities">1 упаковка (30 г)</dt>
+              <dd class="description-list__cost">300 Р.</dd>
             </dl>
 
             <a class="additions-list__button button" href="">заказать</a>
@@ -451,12 +451,13 @@
         </a>
 
         <ul class="page-footer__list">
-          <li class="page-footer__item page-footer__item--vk">
-            <a class="page-footer__link" href="#">
+          <li class="page-footer__item--instagram">
+            <a class="page-footer__link page-footer__link--vk" href="#">
               <span class="visually-hidden">Мы в ВКонакте</span>
               <svg
+                class="page-footer__icon-svg page-footer__icon-svg--vk"
                 width="23"
-                height="13"
+                height="16"
                 aria-hidden="true"
                 focusable="false"
                 xmlns="http://www.w3.org/2000/svg"
@@ -468,10 +469,11 @@
             </a>
           </li>
 
-          <li class="page-footer__item page-footer__item--instagram">
-            <a class="page-footer__link" href="#">
+          <li class="page-footer__item">
+            <a class="page-footer__link page-footer__link--instagram" href="#">
               <span class="visually-hidden">Мы в Instagram</span>
               <svg
+                class="page-footer__icon-svg page-footer__icon-svg--instagram"
                 width="16"
                 height="16"
                 aria-hidden="true"
@@ -480,26 +482,26 @@
               >
                 <path
                   d="M7.98.06c1.34 0 2.43.02 3.27.05a6 6 0 0 1 1.92.37 3.99 3.99 0 0 1 2.31 2.32 6 6 0 0 1 .38 1.92 91.88 91.88 0 0 1 0 6.53 6 6 0 0 1-.38 1.92 3.99 3.99 0 0 1-2.3 2.31 6 6 0 0 1-1.93.38 91.88 91.88 0 0 1-6.53 0 6 6 0 0 1-1.92-.38 3.99 3.99 0 0 1-2.32-2.3 6 6 0 0 1-.37-1.93 91.73 91.73 0 0 1 0-6.53A6 6 0 0 1 .48 2.8 3.99 3.99 0 0 1 2.8.48 6 6 0 0 1 4.72.11C5.56.08 6.65.06 7.98.06Zm0 1.03c-1.38 0-2.51.02-3.39.05-.56.02-1.08.12-1.56.3-.75.31-1.28.84-1.6 1.6-.17.47-.27 1-.29 1.55a98.83 98.83 0 0 0 0 6.79c.02.56.12 1.08.3 1.56.31.75.84 1.28 1.6 1.6.47.17 1 .27 1.55.29a98.66 98.66 0 0 0 6.79 0 5.01 5.01 0 0 0 1.56-.3 2.85 2.85 0 0 0 1.6-1.6c.17-.47.27-1 .29-1.55a98.66 98.66 0 0 0 0-6.79 5.01 5.01 0 0 0-.3-1.56 2.85 2.85 0 0 0-1.6-1.6c-.47-.17-1-.27-1.55-.29-.88-.03-2.01-.05-3.4-.05Zm0 10.07c.88 0 1.63-.31 2.25-.93.62-.62.93-1.37.93-2.25 0-.87-.31-1.62-.93-2.24a3.06 3.06 0 0 0-2.25-.93c-.87 0-1.62.31-2.24.93a3.06 3.06 0 0 0-.93 2.24c0 .88.31 1.63.93 2.25.62.62 1.37.93 2.24.93Zm0-7.24c1.13 0 2.09.4 2.88 1.19.8.8 1.19 1.75 1.19 2.87 0 1.13-.4 2.09-1.2 2.88-.78.8-1.74 1.19-2.87 1.19-1.12 0-2.08-.4-2.87-1.2a3.92 3.92 0 0 1-1.19-2.87c0-1.12.4-2.08 1.19-2.87.8-.8 1.75-1.19 2.87-1.19Zm5.2-.15a.95.95 0 0 1-.97.94.9.9 0 0 1-.67-.28.9.9 0 0 1-.27-.66.95.95 0 0 1 .93-.97c.26 0 .49.1.68.29.2.19.3.42.3.68Z"
-                  fill="#666"
                 />
               </svg>
             </a>
           </li>
 
-          <li class="page-footer__item page-footer__item--facebook">
-            <a class="page-footer__link" href="#">
+          <li class="page-footer__item">
+            <a class="page-footer__link page-footer__link--facebook" href="#">
               <span class="visually-hidden">Мы в Facebook</span>
               <svg
-                width="13"
-                height="20"
+                class="page-footer__icon-svg page-footer__icon-svg--facebook"
+                width="22"
+                height="22"
                 aria-hidden="true"
                 focusable="false"
-                fill="none"
+                viewBox="0 0 22 22"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M11.5.83H8.75c-1.22 0-2.38.48-3.24 1.32a4.45 4.45 0 0 0-1.34 3.18v2.7H1.42v3.59h2.75v7.19h3.66v-7.2h2.75l.92-3.59H7.83v-2.7c0-.23.1-.46.27-.63.17-.17.4-.26.65-.26h2.75V.83Z"
-                  stroke="#666"
+                  d="M16.5 1.83325H13.75C12.5344 1.83325 11.3686 2.30674 10.5091 3.14957C9.64956 3.99239 9.16667 5.1355 9.16667 6.32743V9.02394H6.41667V12.6193H9.16667V19.81H12.8333V12.6193H15.5833L16.5 9.02394H12.8333V6.32743C12.8333 6.08905 12.9299 5.86042 13.1018 5.69186C13.2737 5.52329 13.5069 5.4286 13.75 5.4286H16.5V1.83325Z"
+                  stroke="#666666"
                   stroke-width="1.1"
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -509,19 +511,17 @@
           </li>
         </ul>
 
-        <a class="page-footer__copyright" href="#"
-          >HTML Academy
+        <a class="page-footer__copyright" href="#">
+          HTML Academy
           <svg
             width="27"
             height="34"
             aria-hidden="true"
             focusable="false"
-            fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
               d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z"
-              fill="#666"
             />
           </svg>
         </a>
