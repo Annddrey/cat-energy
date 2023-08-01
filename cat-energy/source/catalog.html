@@ -9,7 +9,7 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo" href="">
+        <a class="page-header__logo" href="index.html">
           <img
             class="logo-image"
             src="img/logo-mobail.svg"
@@ -58,7 +58,9 @@
       </div>
     </header>
     <main class="page__main page-main">
-      <h1 class="page-main__title">Каталог продукции</h1>
+      <h1 class="page-main__title page-main__title--catalog">
+        Каталог продукции
+      </h1>
 
       <section class="page-main__section catalog-list">
         <h2 class="visually-hidden">Карточки товаров</h2>
@@ -411,19 +413,25 @@
         <h2 class="visually-hidden">Контакты</h2>
 
         <address class="invitation__address">
-          <p class="invitation__title">приглашаем к сотрудничеству дилеров!</p>
+          <p class="invitation__title">
+            приглашаем <br />
+            к сотрудничеству дилеров!
+          </p>
           <p class="invitation__text">
             ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
           </p>
         </address>
 
-        <img
-          class="invitation__map"
-          width="320"
-          height="362"
-          src="img/location.png"
-          alt="Карта"
-        />
+        <div class="invitation__container">
+          <span class="invitation__map-pin"></span>
+          <img
+            class="invitation__map"
+            width="320"
+            height="362"
+            src="img/location.png"
+            alt="Карта"
+          />
+        </div>
       </article>
     </main>
 
