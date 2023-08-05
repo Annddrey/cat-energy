@@ -504,28 +504,34 @@ template {
 
 .page-header__logo {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   min-width: 190px;
 }
 @media (max-width: 767px) {
+  .page-header__logo {
+    flex: 1 0 auto;
+  }
   .page-header__logo .logo-sign {
-    margin-left: 56px;
+    justify-self: center;
   }
 }
 @media (min-width: 768px) {
   .page-header__logo {
-    width: 174px;
-    background: url("../../img/logo-tablet.svg") no-repeat center;
+    align-self: flex-end;
   }
-  .page-header__logo img {
+  .page-header__logo .logo-image {
+    width: 174px;
+    height: 52px;
+  }
+  .page-header__logo .logo-sign {
     display: none;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .page-header__logo {
     width: 202px;
-    background: url("../../img/logo-desktop.svg") no-repeat center;
+    height: 59px;
   }
 }
 .page-header__logo:hover {
@@ -537,6 +543,7 @@ template {
 
 .page-header__nav {
   display: flex;
+  flex: 0 1 auto;
   align-items: center;
   text-transform: uppercase;
   flex-grow: 1;
@@ -544,6 +551,7 @@ template {
 @media (min-width: 768px) {
   .page-header__nav {
     justify-content: end;
+    align-items: end;
   }
   .page-header__nav button {
     display: none;
@@ -702,8 +710,13 @@ template {
   text-align: center;
   background-image: url("../../img/index-color.png"), url("../../img/index-background.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: 100%;
+  background-position: center 0;
+  background-size: contain;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .promo {
+    background-image: url("../../img/index-color.png"), url("../../img/index-background@2x.jpg");
+  }
 }
 @media (min-width: 768px) {
   .promo {
@@ -715,7 +728,7 @@ template {
     padding: 0;
   }
 }
-@media (min-width: 470px) {
+@media (min-width: 450px) {
   .promo {
     padding-left: 30px;
     padding-right: 30px;
@@ -742,11 +755,17 @@ template {
     right: 0;
     margin-top: -200px;
     margin-right: -30px;
-    background: url("../../img/index-color.png"), url("../../img/index-background-desktop.png") no-repeat;
+    background: url("../../img/index-color.png"), url("../../img/index-background-desktop.jpg") no-repeat;
     background-size: cover;
   }
 }
+@media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1440px) and (min-resolution: 2dppx) {
+  .promo__container::after {
+    background-image: url("../../img/index-color.png"), url("../../img/index-background-desktop@2x.jpg");
+  }
+}
 .promo__title {
+  margin-top: 0;
   margin-bottom: 25px;
   font-size: 36px;
   line-height: 36px;
@@ -1694,17 +1713,11 @@ template {
 }
 .invitation__map {
   display: block;
-  width: 114%;
   height: auto;
 }
 @media (min-width: 768px) {
   .invitation__map {
     width: 100%;
-  }
-}
-@media (min-width: 1440px) {
-  .invitation__map {
-    content: url("../../img/location-desktop.png");
   }
 }
 .invitation__map-pin {

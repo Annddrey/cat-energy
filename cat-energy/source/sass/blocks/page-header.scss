@@ -34,28 +34,33 @@
 
 .page-header__logo {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   min-width: 190px;
 
   @media (max-width: $mobile-width-only) {
+    flex: 1 0 auto;
     & .logo-sign {
-      margin-left: 56px;
+      justify-self: center;
     }
   }
 
   @media (min-width: $tablet-width) {
-    img {
-      display: none;
+    align-self: flex-end;
+
+    & .logo-image {
+      width: 174px;
+      height: 52px;
     }
 
-    width: 174px;
-    background: url("../../img/logo-tablet.svg") no-repeat center;
+    & .logo-sign {
+      display: none;
+    }
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     width: 202px;
-    background: url("../../img/logo-desktop.svg") no-repeat center;
+    height: 59px;
   }
 
   &:hover {
@@ -69,15 +74,18 @@
 
 .page-header__nav {
   display: flex;
+  flex: 0 1 auto;
   align-items: center;
   text-transform: uppercase;
   flex-grow: 1;
 
   @media (min-width: $tablet-width) {
+    justify-content: end;
+    align-items: end;
+
     button {
       display: none;
     }
-    justify-content: end;
   }
 
   @media (max-width: $mobile-width-only) {

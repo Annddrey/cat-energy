@@ -69,15 +69,10 @@
 
   &__map {
     display: block;
-    width: 114%;
     height: auto;
 
     @media (min-width: $tablet-width) {
       width: 100%;
-    }
-
-    @media (min-width: $desktop-width) {
-      content: url("../../img/location-desktop.png");
     }
   }
 
