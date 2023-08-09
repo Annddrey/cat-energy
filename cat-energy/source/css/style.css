@@ -1648,7 +1648,7 @@ template {
 
 .invitation {
   position: relative;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 .invitation__address {
   display: grid;
@@ -1711,8 +1711,12 @@ template {
   overflow: hidden;
   max-height: 400px;
 }
+.invitation__container picture {
+  width: 100%;
+}
 .invitation__map {
   display: block;
+  width: 100%;
   height: auto;
 }
 @media (min-width: 768px) {
