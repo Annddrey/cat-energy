@@ -28,6 +28,10 @@
       top: -82px;
       right: -70px;
     }
+
+    @media (min-width: $tablet-width) {
+      right: -110px;
+    }
   }
 
   &:first-of-type::before {

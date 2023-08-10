@@ -5,18 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Cat Energy</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo" href="index.html">
-          <img
-            class="logo-image"
-            src="img/logo-mobail.svg"
-            width="33"
-            height="37"
-            alt="Cat Energy."
-          />
+        <a class="page-header__logo" href="">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" />
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
+            <img
+              class="logo-image"
+              src="img/logo-mobail.svg"
+              width="33"
+              height="37"
+              alt="Cat Energy."
+            />
+          </picture>
           <img
             class="logo-sign"
             width="101"
@@ -35,15 +43,24 @@
 
           <ul class="page-header__list">
             <li class="page-header__item">
-              <a class="page-header__link" href="index.html">главная</a>
+              <a class="page-header__link page-header__link" href="index.html"
+                >главная</a
+              >
             </li>
             <li class="page-header__item">
-              <a class="page-header__link" href="catalog.html">
+              <a
+                class="page-header__link page-header__link"
+                href="catalog.html"
+              >
                 каталог продукции
               </a>
             </li>
             <li class="page-header__item page-header__item--current">
-              <a class="page-header__link" href=""> подбор программы </a>
+              <a
+                class="page-header__link page-header__link"
+                href=""
+                >подбор программы</a
+              >
             </li>
           </ul>
         </nav>
@@ -298,13 +315,26 @@
 
         <div class="invitation__container">
           <span class="invitation__map-pin"></span>
-          <img
-            class="invitation__map"
-            width="320"
-            height="362"
-            src="img/location.png"
-            alt="Карта"
-          />
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              src="img/location-desktop.jpg"
+              srcset="img/location-desktop@2x.jpg 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              src="img/location-tablet.jpg"
+              srcset="img/location-tablet@2x.jpg 2x"
+            />
+            <img
+              class="invitation__map"
+              width="320"
+              height="362"
+              src="img/location.jpg"
+              srcset="img/location@2x.jpg 2x"
+              alt="Карта"
+            />
+          </picture>
         </div>
       </article>
     </main>

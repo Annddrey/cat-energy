@@ -2394,6 +2394,11 @@ template {
   background: url("../../img/present-icon.svg") center 58px no-repeat, url("../../img/index-color.png"), url("../../img/present.png") 0/cover;
   background-color: #68b738;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .present {
+    background: url("../../img/present-icon.svg") center 58px no-repeat, url("../../img/index-color.png"), url("../../img/present@2x.png") 0/cover;
+  }
+}
 @media (min-width: 768px) {
   .present {
     justify-content: center;
@@ -2404,6 +2409,11 @@ template {
     background: url("../../img/present-icon.svg") 77px 57px/80px 82px no-repeat, url("../../img/index-color.png"), url("../../img/present.png") 0 -320px/cover no-repeat;
   }
 }
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+  .present {
+    background: url("../../img/present-icon.svg") 77px 57px/80px 82px no-repeat, url("../../img/index-color.png"), url("../../img/present@2x.png") 0 -320px/cover no-repeat;
+  }
+}
 @media (min-width: 1440px) {
   .present {
     justify-content: end;
@@ -2412,7 +2422,11 @@ template {
     min-height: 289px;
     margin: 0;
     background: url("../../img/present-icon.svg") center 55px no-repeat, url("../../img/index-color.png"), url("../../img/present.png") 0/cover;
-    background-color: #68b738;
+  }
+}
+@media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1440px) and (min-resolution: 2dppx) {
+  .present {
+    background: url("../../img/present-icon.svg") center 55px no-repeat, url("../../img/index-color.png"), url("../../img/present@2x.png") 0/cover;
   }
 }
 
@@ -2544,6 +2558,11 @@ template {
   .form__body > .field-group::before {
     top: -82px;
     right: -70px;
+  }
+}
+@media (min-width: 768px) {
+  .form__body > .field-group::before {
+    right: -110px;
   }
 }
 .form__body > .field-group:first-of-type::before {
