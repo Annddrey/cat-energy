@@ -62,6 +62,7 @@
 
   &__link {
     display: block;
+    color: #666666;
     &--vk {
       padding: 13px 15px;
     }
@@ -69,12 +70,13 @@
     &--instagram {
       padding: 12px 15px;
     }
+
     &--facebook {
-      padding: 22px 22px;
+      padding: 9px 15px 13px;
     }
 
     &:hover {
-      fill: #68b738;
+      color: #68b738;
     }
 
     &:active {
@@ -84,19 +86,24 @@
 
   .page-footer__icon-svg {
     &--vk {
-      width: 30px;
-      height: 22px;
+      @media (min-width: $tablet-width) {
+        width: 30px;
+        height: 22px;
+      }
     }
 
     &--instagram {
-      width: 23px;
-      height: 23px;
+      @media (min-width: $tablet-width) {
+        width: 23px;
+        height: 23px;
+      }
     }
 
     &--facebook {
-      fill: #ffffff;
-      width: 28px;
-      height: 33px;
+      @media (min-width: $tablet-width) {
+        width: 15px;
+        height: 27px;
+      }
     }
   }
 
@@ -111,15 +118,14 @@
     color: #444444;
     text-decoration: none;
 
+    &:hover {
+      color: #68b738;
+    }
+
     & svg {
-      fill: #666666;
       @media (min-width: $tablet-width) {
         margin-left: 22px;
       }
-    }
-
-    &:hover svg {
-      fill: #68b738;
     }
 
     &:active {

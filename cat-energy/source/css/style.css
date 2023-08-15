@@ -1812,6 +1812,7 @@ template {
 }
 .page-footer__link {
   display: block;
+  color: #666666;
 }
 .page-footer__link--vk {
   padding: 13px 15px;
@@ -1820,26 +1821,31 @@ template {
   padding: 12px 15px;
 }
 .page-footer__link--facebook {
-  padding: 22px 22px;
+  padding: 9px 15px 13px;
 }
 .page-footer__link:hover {
-  fill: #68b738;
+  color: #68b738;
 }
 .page-footer__link:active {
   opacity: 0.3;
 }
-.page-footer .page-footer__icon-svg--vk {
-  width: 30px;
-  height: 22px;
+@media (min-width: 768px) {
+  .page-footer .page-footer__icon-svg--vk {
+    width: 30px;
+    height: 22px;
+  }
 }
-.page-footer .page-footer__icon-svg--instagram {
-  width: 23px;
-  height: 23px;
+@media (min-width: 768px) {
+  .page-footer .page-footer__icon-svg--instagram {
+    width: 23px;
+    height: 23px;
+  }
 }
-.page-footer .page-footer__icon-svg--facebook {
-  fill: #ffffff;
-  width: 28px;
-  height: 33px;
+@media (min-width: 768px) {
+  .page-footer .page-footer__icon-svg--facebook {
+    width: 15px;
+    height: 27px;
+  }
 }
 .page-footer__copyright {
   display: flex;
@@ -1852,16 +1858,13 @@ template {
   color: #444444;
   text-decoration: none;
 }
-.page-footer__copyright svg {
-  fill: #666666;
+.page-footer__copyright:hover {
+  color: #68b738;
 }
 @media (min-width: 768px) {
   .page-footer__copyright svg {
     margin-left: 22px;
   }
-}
-.page-footer__copyright:hover svg {
-  fill: #68b738;
 }
 .page-footer__copyright:active {
   opacity: 0.3;
