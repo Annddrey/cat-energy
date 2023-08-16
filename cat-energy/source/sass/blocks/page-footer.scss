@@ -21,7 +21,7 @@
   &__logo-link {
     display: block;
     width: 100%;
-    padding: 39px 56px 32px 96px;
+    padding: 40px 56px 29px 56px;
     box-sizing: border-box;
     border-bottom: 1px solid #d9d9d9;
 
@@ -45,7 +45,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    min-height: 63px;
+    min-height: 61px;
     padding: 0;
     margin: 0;
     border-bottom: 1px solid #d6d6d6;
@@ -57,22 +57,22 @@
   }
 
   &__item {
-    padding: 10px 0;
+    padding: 0;
   }
 
   &__link {
     display: block;
     color: #666666;
     &--vk {
-      padding: 13px 15px;
+      padding: 13px 10px;
     }
 
     &--instagram {
-      padding: 12px 15px;
+      padding: 12px 23px;
     }
 
     &--facebook {
-      padding: 9px 15px 13px;
+      padding: 9px 17px 10px;
     }
 
     &:hover {

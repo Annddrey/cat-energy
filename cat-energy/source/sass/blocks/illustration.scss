@@ -24,7 +24,9 @@
 }
 
 .illustration .page-main__title {
-  margin-bottom: 63px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 63px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
@@ -94,7 +96,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  min-width: 124px;
+  min-width: 120px;
   padding: 14px 0 17px;
   border: 1px solid #cdcdcd;
   border-radius: 4px;
@@ -108,7 +110,8 @@
 .illustration__title {
   display: block;
   position: absolute;
-  bottom: -7px;
+  left: 23px;
+  bottom: -15px;
   padding: 0 8px;
   width: min-content;
   font-family: "Arial", "Arimo", sans-serif;
@@ -142,10 +145,10 @@
 }
 
 .ilustration__resault {
-  margin: 0;
-  margin-bottom: 40px;
+  margin: 3px 0 40px;
   text-align: center;
   line-height: 20px;
+  text-transform: uppercase;
 
   & br {
     display: none;
@@ -244,8 +247,7 @@
 
 .illustration__image {
   display: block;
-  margin: 0 auto;
-
+  margin-left: -5px;
   @media (min-width: $tablet-width) {
     width: 592px;
     height: 511px;
@@ -256,7 +258,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 22px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -282,6 +284,7 @@
 .illustration__button {
   border: none;
   background-color: #ffffff00;
+  padding: 0;
 }
 
 .illustration__button-text {
@@ -301,6 +304,7 @@
   min-width: 85px;
   height: 16px;
   padding: 4px 6px;
+  margin: 0 18px;
   box-sizing: border-box;
   background-color: #ffffff;
   border: 1px solid #cdcdcd;

@@ -33,10 +33,9 @@
 
 .description__item {
   position: relative;
+  display: flex;
   min-height: 60px;
   margin-bottom: 20px;
-  padding-top: 3px;
-  padding-bottom: 3px;
   padding-left: 80px;
 
   &:last-of-type {
@@ -85,6 +84,10 @@
         display: inline;
       }
     }
+  }
+
+  .description__text {
+    margin-top: 3px;
   }
 
   &::after {

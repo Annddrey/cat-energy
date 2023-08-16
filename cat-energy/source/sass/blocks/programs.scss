@@ -16,7 +16,7 @@
 
 .programs__container {
   display: grid;
-  grid-template-columns: 50px 1fr;
+  grid-template-columns: 53px 1fr;
   grid-gap: 22px 18px;
   padding: 24px 33px 18px 20px;
   background-color: #f2f2f2;
@@ -112,6 +112,7 @@
 
 .programs__title {
   grid-column: 2 / 3;
+  margin-top: 5px;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
@@ -162,7 +163,7 @@
 .programs__button-catalog {
   position: relative;
   display: block;
-  margin-top: 15px;
+  margin-top: 18px;
   color: #000000;
   font-family: "Oswald", sans-serif;
   text-decoration: none;
@@ -183,7 +184,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 4px;
+    top: 2px;
     left: 102px;
     width: 24px;
     height: 12px;
@@ -198,4 +199,8 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.programs__container:nth-of-type(2) .programs__button-catalog::after {
+  left: 100px;
 }
