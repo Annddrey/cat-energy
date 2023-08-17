@@ -4,7 +4,7 @@
   border-bottom: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
-    min-height: 76px;
+    min-height: 88px;
     border: none;
   }
 
@@ -47,6 +47,7 @@
 
   @media (min-width: $tablet-width) {
     align-self: flex-end;
+    margin-bottom: 10px;
 
     & .logo-image {
       width: 174px;
@@ -59,8 +60,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 202px;
-    height: 59px;
+    width: 174px;
+    height: 51px;
   }
 
   &:hover {
@@ -111,6 +112,10 @@
       border: none;
     }
   }
+}
+
+.page-header__item:last-child a {
+  padding-right: 0;
 }
 
 .page-header__nav-toggle {
@@ -200,12 +205,17 @@
       &::after {
         content: "";
         position: absolute;
-        left: 20px;
-        right: 20px;
-        bottom: 12px;
+        left: 18px;
+        right: 18px;
+        bottom: 9px;
         height: 2px;
       }
     }
+
+    &--current:last-child .page-header__link::after {
+      right: 0;
+    }
+
     &--current .page-header__link {
       &::after {
         background-color: #68b738;
@@ -241,7 +251,7 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    padding: 20px;
+    padding: 18px;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;

@@ -23,9 +23,17 @@
   }
 }
 
-.illustration .page-main__title {
-  @media (min-width: $desktop-width) {
+.illustration__heading {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
     margin-bottom: 63px;
+    font-size: 60px;
+    line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -102,7 +110,7 @@
   border-radius: 4px;
 
   @media (min-width: $tablet-width) {
-    min-width: 162px;
+    min-width: 164px;
     padding: 15px 0 20px;
   }
 }
@@ -122,9 +130,14 @@
 
   @media (min-width: $tablet-width) {
     width: max-content;
+    bottom: -5px;
     font-size: 14px;
     line-height: 14px;
     background-color: #ffffff;
+
+    &--two {
+      left: 10px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -208,10 +221,10 @@
   @media (min-width: $tablet-width) {
     display: flex;
     position: relative;
-    margin-left: auto;
+    margin-left: 115px;
     margin-right: auto;
     margin-top: -175px;
-    margin-bottom: 25px;
+    margin-bottom: 19px;
   }
 
   @media (min-width: $desktop-width) {
@@ -249,8 +262,21 @@
   display: block;
   margin-left: -5px;
   @media (min-width: $tablet-width) {
+    margin-left: 0;
     width: 592px;
     height: 511px;
+  }
+}
+
+.illustration__image--beefor {
+  @media (min-width: $tablet-width) {
+    content: url("../../img/cat-fat-tablet.png");
+    width: 592px;
+    height: 500px;
+
+    @media (min-resolution: 2dppx) {
+      content: url("../../img/cat-fat-tablet@2x.png");
+    }
   }
 }
 
@@ -271,7 +297,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 15px;
+      margin-top: 10px;
     }
 
     @media (min-width: $desktop-width) {
@@ -322,6 +348,7 @@
 .illustration__label-slider {
   display: flex;
   align-items: center;
+  margin-bottom: 5px;
 }
 
 .ilustration__slider-tablet {

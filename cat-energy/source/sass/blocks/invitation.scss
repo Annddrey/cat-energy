@@ -14,7 +14,7 @@
     z-index: 2;
 
     @media (min-width: $tablet-width) {
-      padding: 60px 70px 56px;
+      padding: 60px 70px 62px;
     }
 
     @media (min-width: $desktop-width) {
@@ -53,8 +53,14 @@
     color: #444444;
 
     @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       font-size: 16px;
       text-align: end;
+
+      & span {
+      }
     }
   }
 
