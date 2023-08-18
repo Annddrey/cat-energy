@@ -1352,6 +1352,11 @@ template {
     display: inline;
   }
 }
+@media (min-width: 1440px) {
+  .illustration__text br {
+    display: none;
+  }
+}
 @media (min-width: 768px) {
   .illustration__text {
     margin-bottom: 54px;
@@ -1398,6 +1403,7 @@ template {
 @media (min-width: 1440px) {
   .illustration__list {
     margin-right: 100px;
+    margin-bottom: 45px;
   }
 }
 
