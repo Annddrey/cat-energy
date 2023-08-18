@@ -179,6 +179,10 @@
     line-height: normal;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-top: 27px;
+  }
+
   &::after {
     content: "";
     position: absolute;

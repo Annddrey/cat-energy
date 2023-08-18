@@ -9,7 +9,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 71px;
-    padding-bottom: 69px;
+    padding-bottom: 63px;
   }
 
   &__list {
@@ -26,7 +26,7 @@
 
     @media (min-width: $desktop-width) {
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      column-gap: 84px;
+      column-gap: 75px;
     }
   }
 }

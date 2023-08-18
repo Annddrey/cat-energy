@@ -22,7 +22,9 @@
       top: 95px;
       bottom: 107px;
       left: 110px;
-      padding: 60px 80px 63px;
+      padding: 55px 80px 63px;
+      padding-right: 65px;
+      column-gap: 45px;
       background-color: #ffffff;
     }
   }
@@ -58,9 +60,10 @@
       justify-content: space-between;
       font-size: 16px;
       text-align: end;
+    }
 
-      & span {
-      }
+    @media (min-width: $desktop-width) {
+      text-align: start;
     }
   }
 

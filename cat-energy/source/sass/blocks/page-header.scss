@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 107px;
+    min-height: 117px;
   }
 }
 
@@ -48,20 +48,22 @@
   @media (min-width: $tablet-width) {
     align-self: flex-end;
     margin-bottom: 10px;
+    width: 174px;
+    height: 51px;
 
     & .logo-image {
       width: 174px;
       height: 52px;
+
+      @media (min-width: $desktop-width) {
+        width: 202px;
+        height: 59px;
+      }
     }
 
     & .logo-sign {
       display: none;
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 174px;
-    height: 51px;
   }
 
   &:hover {
@@ -258,6 +260,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: normal;
+
     &--index {
       color: #ffffff;
     }

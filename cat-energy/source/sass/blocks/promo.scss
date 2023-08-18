@@ -34,24 +34,29 @@
     }
   }
 
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   &__container {
     position: relative;
     @media (min-width: $desktop-width) {
-      min-height: 576px;
+      min-height: 553px;
       padding: 0 110px;
 
       &::after {
         content: "";
         position: absolute;
-        width: 50%;
+        width: 720px;
         min-height: 694px;
-        top: -20px;
+        top: -24px;
         right: 0;
         margin-top: -200px;
-        margin-right: -30px;
         background: url("../../img/index-color.png"),
           url("../../img/index-background-desktop.jpg") no-repeat;
         background-size: cover;
+        background-position: center;
 
         @media (min-resolution: 2dppx) {
           background-image: url("../../img/index-color.png"),
@@ -78,7 +83,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-top: 111px;
+      margin-top: 106px;
       margin-left: 80px;
     }
   }
@@ -114,8 +119,8 @@
 
     @media (min-width: $desktop-width) {
       position: absolute;
-      top: -70px;
-      left: 580px;
+      top: -82px;
+      left: 558px;
       width: 552px;
       height: 499px;
       z-index: 1;

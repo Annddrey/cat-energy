@@ -75,14 +75,23 @@
             питание для котов
           </h1>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
-          <img
-            class="promo__image"
-            width="280"
-            height="270"
-            src="img/promo-image.png"
-            srcset="img/promo-image@2x.png 2x"
-            alt="пачкп куриного корма Cat Energy pro"
-          />
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                img/promo-image-desktop.png    1x,
+                img/promo-image-desktop@2x.png 2x
+              "
+            />
+            <img
+              class="promo__image"
+              width="280"
+              height="270"
+              src="img/promo-image.png"
+              srcset="img/promo-image@2x.png 2x"
+              alt="пачкп куриного корма Cat Energy pro"
+            />
+          </picture>
           <a class="promo__button button" href="#">подобрать программу</a>
         </div>
       </header>
