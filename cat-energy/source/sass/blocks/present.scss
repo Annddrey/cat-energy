@@ -14,7 +14,8 @@
 
   @media (min-resolution: 2dppx) {
     background: url("../../img/present-icon.svg") center 58px no-repeat,
-    url("../../img/index-color.png"), url("../../img/present@2x.png") 0 / cover;
+      url("../../img/index-color.png"),
+      url("../../img/present@2x.png") 0 / cover;
   }
 
   @media (min-width: $tablet-width) {
@@ -28,11 +29,12 @@
       url("../../img/index-color.png"),
       url("../../img/present.png") 0 -320px / cover no-repeat;
 
-      @media (min-resolution: 2dppx) {
-        background: url("../../img/present-icon.svg") 77px 57px/80px 82px no-repeat,
-      url("../../img/index-color.png"),
-      url("../../img/present@2x.png") 0 -320px / cover no-repeat;
-      }
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/present-icon.svg") 77px 57px/80px 82px
+          no-repeat,
+        url("../../img/index-color.png"),
+        url("../../img/present@2x.png") 0 -320px / cover no-repeat;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -46,7 +48,8 @@
 
     @media (min-resolution: 2dppx) {
       background: url("../../img/present-icon.svg") center 55px no-repeat,
-      url("../../img/index-color.png"), url("../../img/present@2x.png") 0 / cover;
+        url("../../img/index-color.png"),
+        url("../../img/present@2x.png") 0 / cover;
     }
   }
 }
@@ -61,6 +64,9 @@
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
+    & br {
+      display: none;
+    }
     margin-right: 124px;
   }
 

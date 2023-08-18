@@ -3,9 +3,23 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   padding-bottom: 25px;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 
   @media (max-width: $mobile-width-only) {
+    &:first-of-type:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -20px;
+      left: -20px;
+      height: 1px;
+      background-color: #ebebeb;
+    }
+
+    &:first-of-type {
+      padding-top: 19px;
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -65,9 +79,9 @@
 
     & h3 {
       margin: 0;
-      margin-bottom: 14px;
-      font-size: 20px;
-      line-height: 24px;
+      margin-bottom: 5px;
+      font-size: 16px;
+      line-height: 20px;
       color: #222222;
 
       @media (min-width: $tablet-width) {
@@ -105,8 +119,9 @@
   }
 
   &__button {
-    grid-column: #{1 / -1};
-    margin-top: 13px;
+    grid-column: 1 / -1;
+    margin-top: 12px;
+    font-size: 16px;
     text-transform: uppercase;
 
     @media (min-width: $tablet-width) {
