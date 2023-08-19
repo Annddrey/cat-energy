@@ -40,6 +40,11 @@
     background-color: #f2f2f2;
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 0 40px 40px;
+    margin-top: 80px;
+  }
+
   &__image-container {
     display: flex;
     justify-content: center;
@@ -51,8 +56,12 @@
 
     @media (min-width: $tablet-width) {
       grid-row: 1 / 2;
-      margin-top: -55px;
-      margin-bottom: 12px;
+      margin-top: -53px;
+      margin-bottom: 38px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 40px;
     }
   }
 
@@ -60,7 +69,7 @@
     display: block;
 
     @media (min-width: $tablet-width) {
-      width: 161px;
+      width: 135px;
       min-height: 172px;
       height: auto;
     }
@@ -69,22 +78,30 @@
   &__link {
     grid-column: 2 / 3;
     text-decoration: none;
+    margin-bottom: 5px;
     color: #000000;
     cursor: pointer;
 
     @media (min-width: $tablet-width) {
+      margin-bottom: 20px;
       grid-column: 1 / 2;
       grid-row: 2 / 3;
     }
 
+    @media (min-width: $desktop-width) {
+      margin-bottom: 21px;
+    }
+
     & h3 {
       margin: 0;
-      margin-bottom: 5px;
       font-size: 16px;
       line-height: 20px;
       color: #222222;
 
       @media (min-width: $tablet-width) {
+        font-size: 20px;
+        line-height: 24px;
+
         & br:first-child {
           display: none;
         }
@@ -125,13 +142,11 @@
     text-transform: uppercase;
 
     @media (min-width: $tablet-width) {
-      grid-row: 4 / 5;
-      margin-top: 24px;
+      padding: 10px 53px;
+      margin-top: 27px;
     }
 
-    @media (min-width: $tablet-width) {
-      padding: 10px 53px;
-      margin-top: 33px;
+    @media (min-width: $desktop-width) {
     }
   }
 }
@@ -139,7 +154,11 @@
 .card--more {
   & .card__image-container {
     @media (min-width: $tablet-width) {
-      margin: -73px auto 28px;
+      margin: -80px auto 28px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 34px;
     }
 
     & img {
@@ -158,8 +177,8 @@
   color: #444444;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 9px;
-    margin-bottom: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 8px;
     border-bottom: 1px solid #cdcdcd;
   }
 }

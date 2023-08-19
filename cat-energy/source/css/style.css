@@ -406,13 +406,14 @@ template {
 }
 @media (min-width: 768px) {
   .page-main__title--catalog {
+    margin-top: 55px;
     margin-left: 30px;
-    margin-bottom: 82px;
+    margin-bottom: 88px;
   }
 }
 @media (min-width: 1440px) {
   .page-main__title--catalog {
-    margin-top: 64px;
+    margin-top: 72px;
     margin-left: 110px;
     margin-bottom: 85px;
   }
@@ -1731,6 +1732,7 @@ template {
   column-gap: 2px;
   padding: 27px 20px;
   z-index: 2;
+  background-color: #f2f2f2;
 }
 @media (min-width: 768px) {
   .invitation__address {
@@ -1743,11 +1745,14 @@ template {
     top: 95px;
     bottom: 107px;
     left: 110px;
-    padding: 55px 80px 63px;
+    padding: 60px 78px 63px;
     padding-right: 65px;
     column-gap: 45px;
     background-color: #ffffff;
   }
+}
+.invitation__address--index {
+  background-color: #ffffff;
 }
 .invitation__title {
   grid-column: 1/2;
@@ -1975,13 +1980,13 @@ template {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
-    row-gap: 94px;
+    row-gap: 73px;
   }
 }
 @media (min-width: 1440px) {
   .catalog-list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 63px 80px;
+    grid-gap: 63px 78px;
   }
 }
 
@@ -2025,6 +2030,12 @@ template {
     background-color: #f2f2f2;
   }
 }
+@media (min-width: 1440px) {
+  .card {
+    padding: 0 40px 40px;
+    margin-top: 80px;
+  }
+}
 .card__image-container {
   display: flex;
   justify-content: center;
@@ -2037,8 +2048,13 @@ template {
 @media (min-width: 768px) {
   .card__image-container {
     grid-row: 1/2;
-    margin-top: -55px;
-    margin-bottom: 12px;
+    margin-top: -53px;
+    margin-bottom: 38px;
+  }
+}
+@media (min-width: 1440px) {
+  .card__image-container {
+    margin-bottom: 40px;
   }
 }
 .card__image {
@@ -2046,7 +2062,7 @@ template {
 }
 @media (min-width: 768px) {
   .card__image {
-    width: 161px;
+    width: 135px;
     min-height: 172px;
     height: auto;
   }
@@ -2054,23 +2070,33 @@ template {
 .card__link {
   grid-column: 2/3;
   text-decoration: none;
+  margin-bottom: 5px;
   color: #000000;
   cursor: pointer;
 }
 @media (min-width: 768px) {
   .card__link {
+    margin-bottom: 20px;
     grid-column: 1/2;
     grid-row: 2/3;
   }
 }
+@media (min-width: 1440px) {
+  .card__link {
+    margin-bottom: 21px;
+  }
+}
 .card__link h3 {
   margin: 0;
-  margin-bottom: 5px;
   font-size: 16px;
   line-height: 20px;
   color: #222222;
 }
 @media (min-width: 768px) {
+  .card__link h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
   .card__link h3 br:first-child {
     display: none;
   }
@@ -2108,20 +2134,18 @@ template {
 }
 @media (min-width: 768px) {
   .card__button {
-    grid-row: 4/5;
-    margin-top: 24px;
-  }
-}
-@media (min-width: 768px) {
-  .card__button {
     padding: 10px 53px;
-    margin-top: 33px;
+    margin-top: 27px;
   }
 }
-
 @media (min-width: 768px) {
   .card--more .card__image-container {
-    margin: -73px auto 28px;
+    margin: -80px auto 28px;
+  }
+}
+@media (min-width: 1440px) {
+  .card--more .card__image-container {
+    margin-bottom: 34px;
   }
 }
 @media (min-width: 768px) {
@@ -2139,8 +2163,8 @@ template {
 }
 @media (min-width: 768px) {
   .card__list-container {
-    padding-bottom: 9px;
-    margin-bottom: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 8px;
     border-bottom: 1px solid #cdcdcd;
   }
 }
@@ -2225,6 +2249,14 @@ template {
     height: 60px;
   }
 }
+@media (min-width: 768px) {
+  .more__image-container::before {
+    top: 31px;
+  }
+  .more__image-container::after {
+    top: 33px;
+  }
+}
 
 .more__title {
   margin: 0;
@@ -2281,6 +2313,11 @@ template {
     line-height: 20px;
   }
 }
+@media (min-width: 1440px) {
+  .more__button {
+    padding: 10px 0 10px;
+  }
+}
 
 .additions-list {
   position: relative;
@@ -2299,12 +2336,13 @@ template {
 }
 @media (min-width: 768px) {
   .additions-list::after {
-    top: 90px;
+    top: 87px;
     left: -30px;
   }
 }
 @media (min-width: 1440px) {
   .additions-list::after {
+    top: 98px;
     right: auto;
     left: 0;
     width: 70px;
@@ -2312,21 +2350,23 @@ template {
 }
 @media (min-width: 768px) {
   .additions-list {
-    padding-top: 68px;
+    padding-top: 65px;
     padding-bottom: 76px;
   }
 }
 @media (min-width: 1440px) {
   .additions-list {
     display: grid;
+    padding-top: 76px;
     grid-template-columns: 1fr 244px;
     column-gap: 80px;
     row-gap: 80px;
+    padding-bottom: 81px;
   }
   .additions-list::before {
     position: absolute;
     content: "";
-    top: 90px;
+    top: 98px;
     left: 110px;
     right: 0;
     height: 2px;
@@ -2393,7 +2433,7 @@ template {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
-    row-gap: 21px;
+    row-gap: 25px;
     padding: 26px 0 28px;
     border: none;
   }
@@ -2411,7 +2451,7 @@ template {
   .additions-list__item {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 38px;
+    column-gap: 80px;
     align-items: baseline;
     padding-top: 15px;
     padding-bottom: 17px;
@@ -2476,15 +2516,23 @@ template {
     margin-left: 49px;
   }
 }
+@media (min-width: 1440px) {
+  .description-list__cost {
+    margin: 0;
+    margin-right: -40px;
+  }
+}
 
 .additions-list__button {
   margin-top: 15px;
 }
 @media (min-width: 768px) {
   .additions-list__button {
+    padding: 8px 44px 8px;
     line-height: 24px;
     grid-column: 1/-1;
     margin: 0;
+    font-size: 16px;
   }
 }
 @media (min-width: 1440px) {
@@ -2519,6 +2567,7 @@ template {
   .present {
     justify-content: center;
     align-items: end;
+    margin-top: 67px;
     padding-top: 43px;
     min-height: 200px;
     text-align: start;

@@ -12,6 +12,7 @@
     column-gap: 2px;
     padding: 27px 20px;
     z-index: 2;
+    background-color: #f2f2f2;
 
     @media (min-width: $tablet-width) {
       padding: 60px 70px 62px;
@@ -22,9 +23,13 @@
       top: 95px;
       bottom: 107px;
       left: 110px;
-      padding: 55px 80px 63px;
+      padding: 60px 78px 63px;
       padding-right: 65px;
       column-gap: 45px;
+      background-color: #ffffff;
+    }
+
+    &--index {
       background-color: #ffffff;
     }
   }

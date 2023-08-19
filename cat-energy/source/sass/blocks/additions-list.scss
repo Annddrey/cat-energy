@@ -14,11 +14,12 @@
     z-index: -1;
 
     @media (min-width: $tablet-width) {
-      top: 90px;
+      top: 87px;
       left: -30px;
     }
 
     @media (min-width: $desktop-width) {
+      top: 98px;
       right: auto;
       left: 0;
       width: 70px;
@@ -26,20 +27,22 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 68px;
+    padding-top: 65px;
     padding-bottom: 76px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
+    padding-top: 76px;
     grid-template-columns: 1fr 244px;
     column-gap: 80px;
     row-gap: 80px;
+    padding-bottom: 81px;
 
     &::before {
       position: absolute;
       content: "";
-      top: 90px;
+      top: 98px;
       left: 110px;
       right: 0;
       height: 2px;
@@ -102,7 +105,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
-    row-gap: 21px;
+    row-gap: 25px;
     padding: 26px 0 28px;
     border: none;
 
@@ -120,7 +123,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 38px;
+    column-gap: 80px;
     align-items: baseline;
     padding-top: 15px;
     padding-bottom: 17px;
@@ -181,15 +184,22 @@
   @media (min-width: $tablet-width) {
     margin-left: 49px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-right: -40px;
+  }
 }
 
 .additions-list__button {
   margin-top: 15px;
 
   @media (min-width: $tablet-width) {
+    padding: 8px 44px 8px;
     line-height: 24px;
     grid-column: 1 / -1;
     margin: 0;
+    font-size: 16px;
   }
 
   @media (min-width: $desktop-width) {

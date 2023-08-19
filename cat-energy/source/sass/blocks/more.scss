@@ -57,6 +57,16 @@
     width: 60px;
     height: 60px;
   }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: 31px;
+    }
+
+    &::after {
+      top: 33px;
+    }
+  }
 }
 
 .more__title {
@@ -113,5 +123,9 @@
     padding-top: 10px;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 0 10px;
   }
 }
