@@ -9,11 +9,13 @@
   padding-left: 46px;
   text-transform: uppercase;
   vertical-align: middle;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
+    padding-top: 5px;
+    padding-bottom: 5px;
     padding-left: 60px;
     font-size: 20px;
     line-height: normal;

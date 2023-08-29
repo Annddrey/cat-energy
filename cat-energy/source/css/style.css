@@ -419,18 +419,20 @@ template {
   }
 }
 .page-main__title--form {
+  margin-top: 25px;
   margin-left: 20px;
-  margin-bottom: 37px;
+  margin-bottom: 35px;
 }
 @media (min-width: 768px) {
   .page-main__title--form {
+    margin-top: 54px;
     margin-left: 70px;
     margin-bottom: 54px;
   }
 }
 @media (min-width: 1440px) {
   .page-main__title--form {
-    margin-top: 73px;
+    margin-top: 70px;
     margin-left: 110px;
     margin-bottom: 56px;
   }
@@ -2619,7 +2621,7 @@ template {
 }
 
 .form__body {
-  padding-top: 39px;
+  padding-top: 37px;
   padding-bottom: 32px;
 }
 @media (min-width: 768px) {
@@ -2643,7 +2645,7 @@ template {
 
 .form__container {
   text-align: center;
-  margin-top: 34px;
+  margin-top: 32px;
 }
 @media (min-width: 768px) {
   .form__container {
@@ -2659,6 +2661,7 @@ template {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 81px;
+    margin-top: 60px;
     text-align: start;
   }
 }
@@ -2673,6 +2676,9 @@ template {
 @media (min-width: 768px) {
   .form__button {
     width: auto;
+    padding: 14px 65px;
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
@@ -2701,69 +2707,23 @@ template {
   padding: 0;
 }
 .field-group:not(:last-of-type) {
-  margin-bottom: 24px;
+  margin-bottom: 21px;
 }
 @media (min-width: 768px) {
   .field-group:not(:last-of-type) {
     margin-bottom: 65px;
   }
 }
-
-.form__body > .field-group {
-  position: relative;
-}
-.form__body > .field-group::before {
-  position: absolute;
-  content: "";
-  top: -45px;
-  left: 0;
-  right: -20px;
-  height: 2px;
-  background-color: #68b738;
-  z-index: -1;
-}
-@media (min-width: 768px) {
-  .form__body > .field-group::before {
-    top: -82px;
-    right: -70px;
-  }
-}
-@media (min-width: 768px) {
-  .form__body > .field-group::before {
-    right: -110px;
-  }
-}
-.form__body > .field-group:first-of-type::before {
-  top: -70px;
-}
-@media (min-width: 768px) {
-  .form__body > .field-group:first-of-type::before {
-    top: -82px;
-  }
-}
-@media (min-width: 768px) {
-  .form__body > .field-group::after {
-    position: absolute;
-    content: "";
-    top: -82px;
-    left: -70px;
-    width: 30px;
-    height: 2px;
-    background-color: #68b738;
-    z-index: -1;
-  }
-}
-@media (min-width: 768px) and (min-width: 768px) {
-  .form__body > .field-group::after {
-    left: -110px;
-    width: 70px;
+@media (min-width: 1440px) {
+  .field-group:not(:last-of-type) {
+    margin-bottom: 46px;
   }
 }
 
 .form__group-container .field-group {
   position: relative;
   padding-bottom: 22px;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 .form__group-container .field-group::before {
   position: absolute;
@@ -2782,7 +2742,7 @@ template {
 @media (min-width: 768px) {
   .form__group-container .field-group {
     padding-bottom: 0;
-    margin-bottom: 73px;
+    margin-bottom: 71px;
   }
 }
 @media (min-width: 1440px) {
@@ -2797,11 +2757,64 @@ template {
     border: 1px solid #e7e7e7;
   }
 }
+@media (min-width: 768px) {
+  .form__group-container .field-group:nth-of-type(2) .form__group-container .field-group__item:not(:last-child) {
+    margin-bottom: 13px;
+  }
+}
+
+.form__body > .field-group {
+  position: relative;
+}
+.form__body > .field-group::before {
+  position: absolute;
+  content: "";
+  top: -48px;
+  left: 0;
+  right: -20px;
+  height: 2px;
+  background-color: #68b738;
+  z-index: -1;
+}
+@media (min-width: 768px) {
+  .form__body > .field-group::before {
+    top: -87px;
+    right: -70px;
+  }
+}
+@media (min-width: 1440px) {
+  .form__body > .field-group::before {
+    right: -110px;
+  }
+}
+@media (min-width: 768px) {
+  .form__body > .field-group::after {
+    position: absolute;
+    content: "";
+    top: -87px;
+    left: -110px;
+    width: 70px;
+    height: 2px;
+    background-color: #68b738;
+    z-index: -1;
+  }
+  .form__body > .field-group--addintional::before {
+    top: -70px;
+  }
+  .form__body > .field-group--addintional::after {
+    top: -70px;
+  }
+}
+@media (min-width: 1440px) {
+  .form__body > .field-group--addintional {
+    margin-top: 67px;
+  }
+}
 
 .field-group__title {
   position: static;
   display: inline;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   font-size: 24px;
   line-height: 26px;
   padding-right: 22px;
@@ -2809,25 +2822,27 @@ template {
 }
 @media (min-width: 768px) {
   .field-group__title {
-    margin-bottom: 70px;
+    margin-bottom: 73px;
+    padding-right: 45px;
     font-size: 36px;
     line-height: 36px;
   }
   .field-group__title br {
     display: none;
   }
-}
-@media (min-width: 768px) {
-  .field-group__title {
-    margin-bottom: 70px;
+  .field-group__title--addintional {
+    margin-bottom: 57px;
+  }
+  .field-group__title--addintional::after {
+    top: 85px;
   }
 }
 
 .field-group__textarea {
   width: 100%;
   resize: none;
-  min-height: 151px;
-  padding: 9px 12px 9px 15px;
+  min-height: 153px;
+  padding: 11px 12px 9px 15px;
   box-sizing: border-box;
   border: 1px solid #e7e7e7;
   font-size: 16px;
@@ -2836,7 +2851,9 @@ template {
 }
 @media (min-width: 768px) {
   .field-group__textarea {
-    rows: 10;
+    height: 174px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -2857,7 +2874,7 @@ template {
   min-height: 30px;
 }
 .field-group__item:not(:last-child) {
-  margin-bottom: 14px;
+  margin-bottom: 11px;
 }
 @media (min-width: 768px) {
   .field-group__item:not(:last-child) {
@@ -2867,6 +2884,12 @@ template {
 @media (min-width: 768px) {
   .field-group__item {
     min-height: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form__group-container .field-group:nth-of-type(2) .field-group__item:not(:last-of-type) {
+    margin-bottom: 13px;
   }
 }
 
@@ -2905,6 +2928,7 @@ template {
 }
 
 .field__title {
+  width: max-content;
   align-self: center;
   font-size: 16px;
   text-transform: uppercase;
@@ -2918,7 +2942,8 @@ template {
 
 .field__input {
   flex-grow: 1;
-  padding: 12px;
+  padding: 16px;
+  padding-top: 12px;
   margin-left: 12px;
   font-size: 16px;
   line-height: 18px;
@@ -2929,6 +2954,7 @@ template {
 }
 @media (min-width: 768px) {
   .field__input {
+    padding: 10px 20px 11px;
     margin-left: 18px;
     font-size: 20px;
     line-height: normal;
@@ -2946,12 +2972,14 @@ template {
   padding-left: 46px;
   text-transform: uppercase;
   vertical-align: middle;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   box-sizing: border-box;
 }
 @media (min-width: 768px) {
   .control__title {
+    padding-top: 5px;
+    padding-bottom: 5px;
     padding-left: 60px;
     font-size: 20px;
     line-height: normal;

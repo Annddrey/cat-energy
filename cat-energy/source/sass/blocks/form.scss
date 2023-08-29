@@ -1,5 +1,5 @@
 .form__body {
-  padding-top: 39px;
+  padding-top: 37px;
   padding-bottom: 32px;
 
   @media (min-width: $tablet-width) {
@@ -21,7 +21,7 @@
 
 .form__container {
   text-align: center;
-  margin-top: 34px;
+  margin-top: 32px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -35,6 +35,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 81px;
+    margin-top: 60px;
     text-align: start;
   }
 }
@@ -48,6 +49,9 @@
 
   @media (min-width: $tablet-width) {
     width: auto;
+    padding: 14px 65px;
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 

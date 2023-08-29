@@ -4,6 +4,7 @@
 }
 
 .field__title {
+  width: max-content;
   align-self: center;
   font-size: 16px;
   text-transform: uppercase;
@@ -16,7 +17,8 @@
 
 .field__input {
   flex-grow: 1;
-  padding: 12px;
+  padding: 16px;
+  padding-top: 12px;
   margin-left: 12px;
   font-size: 16px;
   line-height: 18px;
@@ -26,6 +28,7 @@
   color: #444444;
 
   @media (min-width: $tablet-width) {
+    padding: 10px 20px 11px;
     margin-left: 18px;
     font-size: 20px;
     line-height: normal;
