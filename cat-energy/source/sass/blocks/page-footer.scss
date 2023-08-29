@@ -1,0 +1,147 @@
+.page-footer {
+  &__wrapper {
+    padding: 0 20px 0;
+    padding-bottom: 0;
+    text-align: center;
+    background-color: #f2f2f2;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 147px;
+      padding: 0 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 110px;
+    }
+  }
+
+  &__logo-link {
+    display: block;
+    width: 100%;
+    padding: 40px 56px 29px 56px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #d9d9d9;
+
+    @media (min-width: $tablet-width) {
+      width: auto;
+      padding: 10px 0;
+      border: none;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 61px;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #d6d6d6;
+    list-style-type: none;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
+  }
+
+  &__item {
+    padding: 0;
+  }
+
+  &__link {
+    display: block;
+    color: #666666;
+    &--vk {
+      padding: 13px 10px;
+
+      @media (min-width: $tablet-width) {
+        padding: 13px 16px;
+      }
+    }
+
+    &--instagram {
+      padding: 12px 23px;
+
+      @media (min-width: $tablet-width) {
+        padding: 13px 12px;
+      }
+    }
+
+    &--facebook {
+      padding: 9px 17px 10px;
+
+      @media (min-width: $tablet-width) {
+        padding: 9px 9px 10px;
+      }
+    }
+
+    &:hover {
+      color: #68b738;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .page-footer__icon-svg {
+    &--vk {
+      @media (min-width: $tablet-width) {
+        width: 30px;
+        height: 22px;
+      }
+    }
+
+    &--instagram {
+      @media (min-width: $tablet-width) {
+        width: 23px;
+        height: 23px;
+      }
+    }
+
+    &--facebook {
+      @media (min-width: $tablet-width) {
+        width: 15px;
+        height: 27px;
+      }
+    }
+  }
+
+  &__copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 0 22px;
+    font-family: "Arial", "Arimo", sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    color: #444444;
+    text-decoration: none;
+
+    &:hover {
+      color: #68b738;
+    }
+
+    & svg {
+      @media (min-width: $tablet-width) {
+        margin-left: 22px;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

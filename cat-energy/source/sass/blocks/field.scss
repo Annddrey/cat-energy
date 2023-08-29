@@ -1,0 +1,36 @@
+.field {
+  display: flex;
+  color: #444444;
+}
+
+.field__title {
+  width: max-content;
+  align-self: center;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+
+.field__input {
+  flex-grow: 1;
+  padding: 16px;
+  padding-top: 12px;
+  margin-left: 12px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: 1px solid #e7e7e7;
+  box-sizing: border-box;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 20px 11px;
+    margin-left: 18px;
+    font-size: 20px;
+    line-height: normal;
+  }
+}

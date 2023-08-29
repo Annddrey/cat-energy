@@ -1,0 +1,83 @@
+.control {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.control__title {
+  font-size: 16px;
+  padding-left: 46px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 60px;
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+
+.control__control-marck {
+  position: absolute;
+  display: block;
+  top: 0;
+  min-width: 30px;
+  min-height: 30px;
+  border: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    min-width: 40px;
+    min-height: 40px;
+  }
+}
+
+.control__control-marck--radio {
+  border-radius: 50%;
+}
+
+.control__input:checked ~ .control__control-marck--radio {
+  &::after {
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: 8px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #68b738;
+
+    @media (min-width: $tablet-width) {
+      top: 11px;
+      left: 11px;
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+.control__input:checked ~ .control__control-marck--checkbox {
+  &::after {
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: 7px;
+    width: 18px;
+    height: 14px;
+    background-image: url("../../img/checked.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      top: 11px;
+      left: 9px;
+      width: 24px;
+      height: 19px;
+      background-size: 100%;
+    }
+  }
+}

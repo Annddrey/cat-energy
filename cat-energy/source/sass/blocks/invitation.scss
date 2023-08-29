@@ -1,0 +1,123 @@
+.page-main__section.invitation {
+  padding: 0;
+}
+
+.invitation {
+  position: relative;
+  background-color: #ffffff;
+
+  &__address {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2px;
+    padding: 27px 20px;
+    z-index: 2;
+    background-color: #f2f2f2;
+
+    @media (min-width: $tablet-width) {
+      padding: 60px 70px 62px;
+    }
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      top: 95px;
+      bottom: 107px;
+      left: 110px;
+      padding: 60px 78px 63px;
+      padding-right: 65px;
+      column-gap: 45px;
+      background-color: #ffffff;
+    }
+
+    &--index {
+      background-color: #ffffff;
+    }
+  }
+
+  &__title {
+    grid-column: 1 / 2;
+    max-width: 189px;
+    margin: 0;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+
+  &__text {
+    grid-column: 2 / 3;
+    justify-self: end;
+    max-width: 173px;
+    margin: 0;
+    font-family: "Arial", "Arimo", sans-serif;
+    font-style: normal;
+    line-height: 20px;
+    color: #444444;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: 16px;
+      text-align: end;
+    }
+
+    @media (min-width: $desktop-width) {
+      text-align: start;
+    }
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-height: 400px;
+
+    & picture {
+      width: 100%;
+    }
+  }
+
+  &__map {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+  }
+
+  &__map-pin {
+    position: absolute;
+    display: block;
+    bottom: 47%;
+    width: 57px;
+    height: 53px;
+    background-image: url("../../img/map-pin.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    @media (min-width: $tablet-width) {
+      bottom: 37%;
+      width: 113px;
+      height: 106px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 63%;
+      bottom: 40%;
+    }
+  }
+
+  &--inner {
+    background-color: #f2f2f2;
+  }
+}

@@ -1,0 +1,148 @@
+.promo {
+  padding: 27px 20px 20px;
+  color: #ffffff;
+  text-align: center;
+  background-image: url("../../img/index-color.png"),
+    url("../../img/index-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/index-color.png"),
+      url("../../img/index-background@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+
+  $background-width-max: 450px;
+
+  @media (min-width: $background-width-max) {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-image: none;
+
+    &__title,
+    &__slogan {
+      color: #000000;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__container {
+    position: relative;
+    @media (min-width: $desktop-width) {
+      min-height: 553px;
+      padding: 0 110px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 720px;
+        min-height: 694px;
+        top: -24px;
+        right: 0;
+        margin-top: -200px;
+        background: url("../../img/index-color.png"),
+          url("../../img/index-background-desktop.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../../img/index-color.png"),
+            url("../../img/index-background-desktop@2x.jpg");
+        }
+      }
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 25px;
+      margin-left: 87px;
+      margin-bottom: 40px;
+      text-align: start;
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 106px;
+      margin-left: 80px;
+    }
+  }
+
+  &__slogan {
+    margin: 0;
+    margin-bottom: 29px;
+    text-transform: uppercase;
+    line-height: 14px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 87px;
+      margin-bottom: 20px;
+      text-align: start;
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 80px;
+    }
+  }
+
+  &__image {
+    @media (min-width: $tablet-width) {
+      display: block;
+      position: relative;
+      left: 40px;
+      width: 625px;
+      height: 610px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      top: -82px;
+      left: 558px;
+      width: 552px;
+      height: 499px;
+      z-index: 1;
+    }
+  }
+
+  &__button.button {
+    max-width: 250px;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: 230px;
+      left: 90px;
+      padding: 17px 26px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 230px;
+      left: 190px;
+    }
+  }
+}

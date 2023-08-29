@@ -1,0 +1,36 @@
+// Global
+
+@import "global/fonts.scss";
+@import "global/normalize";
+@import "global/global.scss";
+@import "global/mixins.scss";
+@import "global/variables.scss";
+
+// Blocks
+
+@import "blocks/page.scss";
+@import "blocks/page-main.scss";
+@import "blocks/page-header.scss";
+@import "blocks/promo.scss";
+@import "blocks/button.scss";
+@import "blocks/programs.scss";
+@import "blocks/description.scss";
+@import "blocks/illustration.scss";
+@import "blocks/invitation.scss";
+@import "blocks/page-footer.scss";
+
+// Catalog
+
+@import "blocks/catalog-list.scss";
+@import "blocks/card.scss";
+@import "blocks/more.scss";
+@import "blocks/additions-list.scss";
+@import "blocks/description-list.scss";
+@import "blocks/present.scss";
+
+// Form
+
+@import "blocks/form.scss";
+@import "blocks/field-group.scss";
+@import "blocks/field.scss";
+@import "blocks/control.scss";

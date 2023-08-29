@@ -1,0 +1,208 @@
+.additions-list {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 35px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 40px;
+    left: 20px;
+    right: -20px;
+    height: 2px;
+    background-color: #68b738;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      top: 87px;
+      left: -30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 98px;
+      right: auto;
+      left: 0;
+      width: 70px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+    padding-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    padding-top: 76px;
+    grid-template-columns: 1fr 244px;
+    column-gap: 80px;
+    row-gap: 80px;
+    padding-bottom: 81px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 98px;
+      left: 110px;
+      right: 0;
+      height: 2px;
+      background-color: #68b738;
+      z-index: -1;
+    }
+  }
+}
+
+.additions-list__heading {
+  margin: 0;
+  margin-bottom: 36px;
+  width: 226px;
+  padding-right: 22px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 36px;
+    padding-right: 36px;
+    width: 338px;
+    margin-bottom: 80px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    margin: 0;
+    padding-left: 0;
+  }
+}
+
+.additions-list__cards {
+  border-top: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 38px;
+    padding-right: 38px;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    padding: 0;
+    border: none;
+  }
+}
+
+.additions-list__item {
+  padding: 13px 0 19px;
+  border-bottom: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 25px;
+    padding: 26px 0 28px;
+    border: none;
+
+    &:not(:last-child)::after {
+      position: absolute;
+      content: "";
+      left: -38px;
+      right: -38px;
+      bottom: 0;
+      height: 1px;
+      background-color: #cdcdcd;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 80px;
+    align-items: baseline;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #cdcdcd;
+
+    &:first-child {
+      border-top: 1px solid #cdcdcd;
+    }
+    &:not(:last-child)::after {
+      content: none;
+    }
+  }
+}
+
+.additions-list__title {
+  margin: 0;
+  margin-bottom: 11px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.additions-list__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    align-items: last baseline;
+    grid-column: 2 / 3;
+    justify-self: end;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: unset;
+  }
+}
+
+.description-list__quantities {
+  font-family: "Arial", "Arimo", sans-serif;
+  line-height: 14px;
+}
+
+.description-list__cost {
+  font-family: "Arial", "Arimo", sans-serif;
+  line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-right: -40px;
+  }
+}
+
+.additions-list__button {
+  margin-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 44px 8px;
+    line-height: 24px;
+    grid-column: 1 / -1;
+    margin: 0;
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: -2 / -1;
+  }
+}

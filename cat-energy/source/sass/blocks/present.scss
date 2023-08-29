@@ -1,0 +1,77 @@
+.present {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+  min-height: 290px;
+  padding-bottom: 43px;
+  margin-top: 35px;
+  box-sizing: border-box;
+  background: url("../../img/present-icon.svg") center 58px no-repeat,
+    url("../../img/index-color.png"), url("../../img/present.png") 0 / cover;
+  background-color: #68b738;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../../img/present-icon.svg") center 58px no-repeat,
+      url("../../img/index-color.png"),
+      url("../../img/present@2x.png") 0 / cover;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+    align-items: end;
+    margin-top: 67px;
+    padding-top: 43px;
+    min-height: 200px;
+    text-align: start;
+
+    background: url("../../img/present-icon.svg") 77px 57px/80px 82px no-repeat,
+      url("../../img/index-color.png"),
+      url("../../img/present.png") 0 -320px / cover no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/present-icon.svg") 77px 57px/80px 82px
+          no-repeat,
+        url("../../img/index-color.png"),
+        url("../../img/present@2x.png") 0 -320px / cover no-repeat;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    min-height: 289px;
+    margin: 0;
+    background: url("../../img/present-icon.svg") center 55px no-repeat,
+      url("../../img/index-color.png"), url("../../img/present.png") 0 / cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/present-icon.svg") center 55px no-repeat,
+        url("../../img/index-color.png"),
+        url("../../img/present@2x.png") 0 / cover;
+    }
+  }
+}
+
+.present__text {
+  margin: 0;
+  width: min-content;
+  min-width: 161px;
+  font-family: "Arial", "Arimo", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    & br {
+      display: none;
+    }
+    margin-right: 124px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}

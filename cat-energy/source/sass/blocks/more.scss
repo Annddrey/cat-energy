@@ -1,0 +1,131 @@
+.more {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 6px 0 25px;
+
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      content: "";
+      position: absolute;
+      left: -20px;
+      right: -20px;
+      bottom: 0;
+      height: 1px;
+      background-color: #ebebeb;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 73px;
+    padding: 52px 38px 38px;
+    border: 2px solid #f2f2f2;
+  }
+}
+
+.more__image-container {
+  position: relative;
+  margin: 0 auto 23px;
+  width: 30px;
+  height: 30px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #d3d3d3;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 14px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #d3d3d3;
+    transform: rotate(90deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 49px;
+    width: 60px;
+    height: 60px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: 31px;
+    }
+
+    &::after {
+      top: 33px;
+    }
+  }
+}
+
+.more__title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+
+  & br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+    font-size: 20px;
+    line-height: 22px;
+
+    & br {
+      display: inline;
+    }
+  }
+}
+
+.more__text {
+  font-family: "Arial", "Arimo", sans-serif;
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+
+  & br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+
+    & br {
+      display: inline;
+    }
+  }
+}
+
+.more__button {
+  margin-top: 21px;
+  color: #444444;
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 10px;
+    margin-top: 87px;
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 0 10px;
+  }
+}

@@ -1,0 +1,82 @@
+.page-main {
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 400;
+
+    @media (min-width: $tablet-width) {
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 43px;
+    }
+
+    &--catalog {
+      margin-top: 24px;
+      margin-left: 20px;
+      margin-bottom: 40px;
+
+      @media (min-width: $tablet-width) {
+        margin-top: 55px;
+        margin-left: 30px;
+        margin-bottom: 88px;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin-top: 72px;
+        margin-left: 110px;
+        margin-bottom: 85px;
+      }
+    }
+
+    &--form {
+      margin-top: 25px;
+      margin-left: 20px;
+      margin-bottom: 35px;
+
+      @media (min-width: $tablet-width) {
+        margin-top: 54px;
+        margin-left: 70px;
+        margin-bottom: 54px;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin-top: 70px;
+        margin-left: 110px;
+        margin-bottom: 56px;
+      }
+    }
+  }
+
+  &__description {
+    margin: 0;
+    margin-left: 20px;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+      margin-left: 70px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 110px;
+    }
+  }
+
+  &__section {
+    padding: 0 20px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 110px;
+    }
+  }
+}
