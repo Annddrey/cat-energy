@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Cat Energy</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicon/apple.png" />
@@ -76,6 +76,18 @@
           </h1>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
           <picture>
+            <source
+              type="image/webp"
+              media="(min-width: 1440px)"
+              srcset="
+                img/promo-image-desktop.webp    1x,
+                img/promo-image-desktop@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              srcset="img/promo-image.webp 1x, img/promo-image@2x.webp 2x"
+            />
             <source
               media="(min-width: 1440px)"
               srcset="
@@ -200,28 +212,40 @@
         <div class="illustration__container">
           <div class="illustration__pictures">
             <div class="img-container" style="width: 270px">
-              <img
-                class="illustration__image illustration__image--beefor"
-                width="280"
-                height="232"
-                src="img/cat-fat.png"
-                srcset="img/cat-fat@2x.png 2x"
-                alt="Кот до питания Cat Energy"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x"
+                />
+                <img
+                  class="illustration__image illustration__image--beefor"
+                  width="280"
+                  height="232"
+                  src="img/cat-fat.png"
+                  srcset="img/cat-fat@2x.png 2x"
+                  alt="Кот до питания Cat Energy"
+                />
+              </picture>
             </div>
 
             <div
               class="img-container img-container--cat-hidden"
               style="width: 296px"
             >
-              <img
-                class="illustration__image illustration__image--after"
-                width="280"
-                height="232"
-                src="img/cat-slim.png"
-                srcset="img/cat-slim@2x.png 2x"
-                alt="Кот после питания Cat Energy"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="img/cat-slim.webp 1x, img/cat-slim@2x.webp 2x"
+                />
+                <img
+                  class="illustration__image illustration__image--after"
+                  width="280"
+                  height="232"
+                  src="img/cat-slim.png"
+                  srcset="img/cat-slim@2x.png 2x"
+                  alt="Кот после питания Cat Energy"
+                />
+              </picture>
             </div>
           </div>
 
@@ -329,7 +353,7 @@
       <div class="page-footer__wrapper">
         <a href="" class="page-footer__logo-link">
           <svg width="128" height="24" aria-hidden="true" focusable="false">
-            <use xlink:href="sprite.svg#logo-footer"></use>
+            <use xlink:href="img/sprite.svg#logo-footer"></use>
           </svg>
         </a>
 
@@ -344,7 +368,7 @@
                 aria-hidden="true"
                 focusable="false"
               >
-                <use xlink:href="sprite.svg#icon-vk"></use>
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
               </svg>
             </a>
           </li>
@@ -359,7 +383,7 @@
                 aria-hidden="true"
                 focusable="false"
               >
-                <use xlink:href="sprite.svg#icon-instagram"></use>
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
@@ -372,7 +396,7 @@
                 width="12"
                 height="21"
               >
-                <use xlink:href="sprite.svg#icon-facebook"></use>
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
@@ -381,27 +405,12 @@
         <a class="page-footer__copyright" href="#">
           HTML Academy
           <svg width="27" height="34" aria-hidden="true" focusable="false">
-            <use xlink:href="sprite.svg#html-academy"></use>
+            <use xlink:href="img/sprite.svg#html-academy"></use>
           </svg>
         </a>
       </div>
     </footer>
 
-    <script>
-      var navMain = document.querySelector(".page-header__nav");
-      var navToggle = document.querySelector(".page-header__nav-toggle");
-
-      navMain.classList.remove("page-header__nav--nojs");
-
-      navToggle.addEventListener("click", function () {
-        if (navMain.classList.contains("page-header__nav--closed")) {
-          navMain.classList.remove("page-header__nav--closed");
-          navMain.classList.add("page-header__nav--opened");
-        } else {
-          navMain.classList.add("page-header__nav--closed");
-          navMain.classList.remove("page-header__nav--opened");
-        }
-      });
-    </script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
