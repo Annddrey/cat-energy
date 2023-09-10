@@ -9,6 +9,20 @@
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicon/apple.png" />
     <link rel="manifest" href="manifest.webmanifest" />
+    <link
+      rel="preload"
+      href="fonts/oswaldregular.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/oswaldmedium.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
   </head>
   <body class="page__body page__body--index">
     <header class="page-header">
@@ -19,6 +33,7 @@
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
             <img
               class="logo-image"
+              loading="lazy"
               src="img/logo-mobail.svg"
               width="33"
               height="37"
@@ -27,6 +42,7 @@
           </picture>
           <img
             class="logo-sign"
+            loading="lazy"
             width="101"
             height="18"
             src="img/logo-mobail-2.svg"
@@ -97,6 +113,7 @@
             />
             <img
               class="promo__image"
+              loading="lazy"
               width="280"
               height="270"
               src="img/promo-image.png"
@@ -219,6 +236,7 @@
                 />
                 <img
                   class="illustration__image illustration__image--beefor"
+                  loading="lazy"
                   width="280"
                   height="232"
                   src="img/cat-fat.png"
@@ -239,6 +257,7 @@
                 />
                 <img
                   class="illustration__image illustration__image--after"
+                  loading="lazy"
                   width="280"
                   height="232"
                   src="img/cat-slim.png"
@@ -338,6 +357,7 @@
             />
             <img
               class="invitation__map"
+              loading="lazy"
               width="320"
               height="362"
               src="img/location.jpg"
