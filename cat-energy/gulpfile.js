@@ -18,7 +18,7 @@ const del = require("del");
 
 const styles = () => {
   return gulp
-    .src("source/sass/style.scss")
+    .src("docs/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
@@ -37,7 +37,7 @@ exports.styles = styles;
 
 const html = () => {
   return gulp
-    .src("source/*.html")
+    .src("docs/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 };
@@ -48,7 +48,7 @@ exports.html = html;
 
 const scripts = () => {
   return gulp
-    .src("source/js/script.js")
+    .src("docs/js/script.js")
     .pipe(terser())
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"))
@@ -61,7 +61,7 @@ exports.scripts = scripts;
 
 const createWebp = () => {
   return gulp
-    .src("source/img/**/*.{jpg,png}")
+    .src("docs/img/**/*.{jpg,png}")
     .pipe(webp({ quality: 90 }))
     .pipe(gulp.dest("build/img"));
 };
@@ -72,7 +72,7 @@ exports.createWebp = createWebp;
 
 const images = () => {
   return gulp
-    .src("source/img/**/*.{png,jpg,svg}")
+    .src("docs/img/**/*.{png,jpg,svg}")
     .pipe(imagemin())
     .pipe(gulp.dest("build/img"));
 };
@@ -83,7 +83,7 @@ exports.images = images;
 
 const sprite = () => {
   return gulp
-    .src("source/img/icon/*.svg")
+    .src("docs/img/icon/*.svg")
     .pipe(
       svgstore({
         inlineSvg: true,
@@ -101,14 +101,14 @@ const copy = (done) => {
   gulp
     .src(
       [
-        "source/fonts/*.{woff2,woff}",
-        "source/*.ico",
-        "source/img/**/*.svg",
-        "!source/img/icons/*.svg",
-        "source/manifest.webmanifest",
+        "docs/fonts/*.{woff2,woff}",
+        "docs/*.ico",
+        "docs/img/**/*.svg",
+        "!docs/img/icons/*.svg",
+        "docs/manifest.webmanifest",
       ],
       {
-        base: "source",
+        base: "docs",
       }
     )
     .pipe(gulp.dest("build"));
@@ -118,9 +118,9 @@ const copy = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch(["source/sass/**/*.scss"], gulp.series(styles));
-  gulp.watch(["source/js/script.js"], gulp.series(scripts));
-  gulp.watch(["source/*.html"], html).on("change", sync.reload);
+  gulp.watch(["docs/sass/**/*.scss"], gulp.series(styles));
+  gulp.watch(["docs/js/script.js"], gulp.series(scripts));
+  gulp.watch(["docs/*.html"], html).on("change", sync.reload);
 };
 
 exports.watcher = watcher;
